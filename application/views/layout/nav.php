@@ -7,7 +7,7 @@
                 <div class="container">
                     <div class="header-left">
                         <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="Porto Logo">
+                            <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/logo.png" alt="Padmaindonesia logo">
                         </a>
                     </div><!-- End .header-left -->
 
@@ -52,73 +52,6 @@
                             <span>Call us now</span>
                             <a href="tel:#"><strong>+123 5678 890</strong></a>
                         </div><!-- End .header-contact -->
-
-                        <div class="dropdown cart-dropdown">
-                            <a href="index.html#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                <span class="cart-count">2</span>
-                            </a>
-
-                            <div class="dropdown-menu" >
-                                <div class="dropdownmenu-wrapper">
-                                    <div class="dropdown-cart-header">
-                                        <span>2 Items</span>
-
-                                        <a href="cart.html">View Cart</a>
-                                    </div><!-- End .dropdown-cart-header -->
-                                    <div class="dropdown-cart-products">
-                                        <div class="product">
-                                            <div class="product-details">
-                                                <h4 class="product-title">
-                                                    <a href="product.html">Woman Ring</a>
-                                                </h4>
-
-                                                <span class="cart-product-info">
-                                                    <span class="cart-product-qty">1</span>
-                                                    x $99.00
-                                                </span>
-                                            </div><!-- End .product-details -->
-
-                                            <figure class="product-image-container">
-                                                <a href="product.html" class="product-image">
-                                                    <img src="assets/images/products/cart/product-1.jpg" alt="product">
-                                                </a>
-                                                <a href="index.html#" class="btn-remove" title="Remove Product"><i class="icon-cancel"></i></a>
-                                            </figure>
-                                        </div><!-- End .product -->
-
-                                        <div class="product">
-                                            <div class="product-details">
-                                                <h4 class="product-title">
-                                                    <a href="product.html">Woman Necklace</a>
-                                                </h4>
-
-                                                <span class="cart-product-info">
-                                                    <span class="cart-product-qty">1</span>
-                                                    x $35.00
-                                                </span>
-                                            </div><!-- End .product-details -->
-
-                                            <figure class="product-image-container">
-                                                <a href="product.html" class="product-image">
-                                                    <img src="assets/images/products/cart/product-2.jpg" alt="product">
-                                                </a>
-                                                <a href="index.html#" class="btn-remove" title="Remove Product"><i class="icon-cancel"></i></a>
-                                            </figure>
-                                        </div><!-- End .product -->
-                                    </div><!-- End .cart-product -->
-
-                                    <div class="dropdown-cart-total">
-                                        <span>Total</span>
-
-                                        <span class="cart-total-price">$134.00</span>
-                                    </div><!-- End .dropdown-cart-total -->
-
-                                    <div class="dropdown-cart-action">
-                                        <a href="checkout-shipping.html" class="btn btn-block">Checkout</a>
-                                    </div><!-- End .dropdown-cart-total -->
-                                </div><!-- End .dropdownmenu-wrapper -->
-                            </div><!-- End .dropdown-menu -->
-                        </div><!-- End .dropdown -->
                     </div><!-- End .header-right -->
                 </div><!-- End .container -->
             </div><!-- End .header-middle -->
@@ -127,9 +60,9 @@
                 <div class="container">
                     <nav class="main-nav">
                         <ul class="menu sf-arrows">
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="<?php echo base_url('home') ?>">Beranda</a></li>
                             <li>
-                                <a href="category.html" class="sf-with-ul">Categories</a>
+                                <a href="category.html" class="sf-with-ul">Tentang Kami</a>
                                 <div class="megamenu megamenu-fixed-width">
                                     <div class="row">
                                         <div class="col-lg-8">
@@ -177,7 +110,7 @@
                                 </div><!-- End .megamenu -->
                             </li>
                             <li class="megamenu-container">
-                                <a href="product.html" class="sf-with-ul">Products</a>
+                                <a href="product.html" class="sf-with-ul">Produk</a>
                                 <div class="megamenu">
                                     <div class="row">
                                         <div class="col-lg-8">
@@ -230,7 +163,7 @@
                                 </div><!-- End .megamenu -->
                             </li>
                             <li>
-                                <a href="index.html#" class="sf-with-ul">Pages</a>
+                                <a href="index.html#" class="sf-with-ul">Galeri</a>
 
                                 <ul>
                                     <li><a href="cart.html">Shopping Cart</a></li>
@@ -259,14 +192,24 @@
                                     <li><a href="forgot-password.html">Forgot Password</a></li>
                                 </ul>
                             </li>
-                            <li><a href="index.html#" class="sf-with-ul">Features</a>
+                            <li><a href="index.html#" class="sf-with-ul">Berita</a>
                                 <ul>
                                     <li><a href="index.html#">Header Types</a></li>
                                     <li><a href="index.html#">Footer Types</a></li>
                                 </ul>
                             </li>
-                            <li class="float-right"><a href="index.html#">Buy Porto!</a></li>
-                            <li class="float-right"><a href="index.html#">Special Offer!</a></li>
+                            <li><a href="index.html#" class="sf-with-ul">Toko Kami</a>
+                                <ul>
+                                    <li><a href="index.html#">Header Types</a></li>
+                                    <li><a href="index.html#">Footer Types</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html#" class="sf-with-ul">Kontak Kami</a>
+                                <ul>
+                                    <li><a href="index.html#">Header Types</a></li>
+                                    <li><a href="index.html#">Footer Types</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                 </div><!-- End .header-bottom -->
