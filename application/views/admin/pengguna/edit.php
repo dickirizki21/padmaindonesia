@@ -7,7 +7,6 @@ echo form_open(base_url('backend/pengguna/edit/'.$pengguna->$id_pengguna));
 ?>
 <div data-collapsed="0" class="card">
 
-<div class="col-md-6">
       <div class="card-header">
         <div class="card-title">
           <h2 class="card-title"><?php echo $title ?></h2>
@@ -18,38 +17,30 @@ echo form_open(base_url('backend/pengguna/edit/'.$pengguna->$id_pengguna));
 
         <div class="row">
 
-          <div class="col-lg-6 col-md-3">
-            <div class="form-group">
+          <div class="col-lg-6 col-md-3 form-group">
             <label> Nama Lengkap </label>
             <input type="text" name="nama_pengguna" placeholder="Nama Lengkap Anda" class="form-control" value="<?php echo $pengguna->nama_pengguna ?>">
-            </div>
           </div>
 
-          <div class="col-lg-6 col-md-3">
-            <div class="form-group">
+          <div class="col-lg-6 col-md-3 form-group">
             <label> Username </label>
-            <input type="text" name="username" placeholder="Masukan Username" class="form-control" value="<?php echo $pengguna->username ?>">
-            </div>
+           <input type="text" name="username" placeholder="Masukan Username" class="form-control" value="<?php echo $pengguna->username ?>">
           </div>
 
-          <div class="col-lg-6 col-md-3">
-            <div class="form-group">
+          <div class="col-lg-6 col-md-3 form-group">
             <label> Email </label>
             <input type="email" name="email_pengguna" placeholder="Masukan Email" class="form-control" value="<?php echo $pengguna->email_pengguna ?>">
-            </div>
           </div>
 
-          <div class="col-lg-6 col-md-3">
-            <div class="form-group">
+          <div class="col-lg-6 col-md-3 form-group">
             <label> Password </label>
-            <input type="password" name="password" placeholder="Masukan Password" class="form-control" value="">
-            </div>
+            <input type="password" name="password" placeholder="Masukan Password" class="form-control" value="<?php echo set_value('password') ?>" required>
           </div>
 
           <div class="col-lg-12">
             <div class="form-group">
             <label> Hak Akses</label>
-              <select name="akses_level">
+             <select name="akses_level">
                 <option value="admin">Admin</option>
                 <option value="user" <?php if($pengguna->akses_level=="user") { echo "selected"; } ?>>User</option>
               </select>
@@ -72,7 +63,7 @@ echo form_open(base_url('backend/pengguna/edit/'.$pengguna->$id_pengguna));
 
     </div>
 
-  </div>
+</div>
 </div>
 </section>
 

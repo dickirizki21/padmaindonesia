@@ -1,47 +1,41 @@
-<!doctype html>
-<html class="left-sidebar-panel sidebar-light" data-style-switcher-options="{'sidebarColor': 'light'}">
-	<head>
 
-		<!-- Basic -->
-		<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/dist/css/skins/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
-		<title><?php echo $title ?></title>
-		<meta name="keywords" content="HTML5 Admin Template" />
-		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
-
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/bootstrap/css/bootstrap.css" />
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/animate/animate.css">
-
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/font-awesome/css/all.min.css" />
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/magnific-popup/magnific-popup.css" />
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
-
-		<!-- Specific Page Vendor CSS -->		
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/jquery-ui/jquery-ui.css" />		
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/jquery-ui/jquery-ui.theme.css" />		
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" />		
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/morris/morris.css" />
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/select2/css/select2.css" />		
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />	
-
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/css/theme.css" />
-
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="<?php echo base_url()?>assets/admin/css/custom.css">
-
-		<!-- Head Libs -->
-		<script src="<?php echo base_url()?>assets/admin/vendor/modernizr/modernizr.js"></script>
-		<script src="<?php echo base_url()?>assets/admin/master/style-switcher/style.switcher.localstorage.js"></script>
-
-	</head>
-	<body>
-		<section class="body">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
