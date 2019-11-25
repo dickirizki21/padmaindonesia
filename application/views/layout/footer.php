@@ -240,5 +240,10 @@
 
     <!-- Main JS File -->
     <script src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/js/main.min.js"></script>
+
+    <!-- Google Map-->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDc3LRykbLB-y8MuomRUIY0qH5S6xgBLX4"></script>
+    <script src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/js/map.js"></script>
+    
 </body>
 </html>
