@@ -38,19 +38,19 @@
 
                         <div class="col-lg-3 order-lg-first">
                             <div class="side-custom-menu">
-                                <h2>TOP CATEGORIES</h2>
+                                <h2 align="center">KATEGORI PRODUK</h2>
 
                                 <div class="side-menu-body">
                                     <ul>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-shirt"></i>Fashion</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-computer"></i>Electronics</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-gift"></i>Gifts</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-couch"></i>Home & Garden</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-computer"></i>Music</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-sport"></i>Sports</a></li>
+                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-shirt"></i>Kategori 1</a></li>
+                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-computer"></i>Kategori 2</a></li>
+                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-gift"></i>Kategori 2</a></li>
+                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-couch"></i>Kategori 3</a></li>
+                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-computer"></i>Kategori 4</a></li>
+                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-sport"></i>Kategori 2</a></li>
                                     </ul>
 
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#" class="btn btn-block btn-primary">HUGE SALE - <strong>70%</strong> Off</a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#" class="btn btn-block btn-primary">CEK <strong>SEKARANG!!!</strong></a>
                                 </div><!-- End .side-menu-body -->
                             </div><!-- End .side-custom-menu -->
                         </div><!-- End .col-lg-3 -->
@@ -158,13 +158,7 @@
             <div class="mb-4"></div><!-- margin -->
 <!-- LIST PRODUCT BARU -->
             <div class="info-boxes-container">
-                <div class="container">
-                    <div class="info-box">
-                        <div class="info-box-content">
-                            <h2>Hot Sales Minggu Ini</h2>
-                        </div><!-- End .info-box-content -->
-                    </div><!-- End .info-box -->
-                </div><!-- End .container -->
+                <center><h2>Hot Sales Minggu Ini</h2></center>
             </div><!-- End .info-boxes-container -->
             <div class="banners-group">
                 <div class="container">
@@ -174,37 +168,21 @@
                         <div class="col-6 col-md-3">
                             <div class="grid-product">
                                 <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/product.html" class="product-image">
                                         <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                     </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
                                     <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:80%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
+                                        
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
                                         <a href="product.html">USB Flash</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$28.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
@@ -221,31 +199,17 @@
                                 </figure>
                                 <div class="product-details">
                                     <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
+                                        
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
                                         <a href="product.html">Inline Headset</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="old-price">$60.00</span>
-                                        <span class="product-price">$48.00</span>
+                                        <span class="old-price">Rp.20.000</span>
+                                        <span class="product-price">Rp.25.000</span>
                                     </div><!-- End .price-box -->
 
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
+                                    
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
@@ -260,31 +224,16 @@
                                 </figure>
                                 <div class="product-details">
                                     <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:60%"></span>
-                                            <!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
+                    
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
                                         <a href="product.html">Computer Mouse</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$8.90</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
+                                    
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
@@ -298,31 +247,15 @@
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:40%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
+                                      
                                     <h2 class="product-title">
                                         <a href="product.html">Laptop</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$299.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
+                                   
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
@@ -336,16 +269,12 @@
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:50%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
+                                    
                                     <h2 class="product-title">
                                         <a href="product.html">Wireless Headset</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$79.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
@@ -375,16 +304,12 @@
                                     <span class="product-label label-hot">Hot</span>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:40%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
+                                      
                                     <h2 class="product-title">
                                         <a href="product.html">Active NC</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$119.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
@@ -414,16 +339,12 @@
                                     <span class="product-label label-hot">Hot</span>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
+                                    
                                     <h2 class="product-title">
                                         <a href="product.html">Back Headset</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$299.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
@@ -452,16 +373,11 @@
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
                                     <h2 class="product-title">
                                         <a href="product.html">Over Earphone</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$299.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
@@ -490,16 +406,12 @@
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:70%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
+                                    
                                     <h2 class="product-title">
                                         <a href="product.html">Passive NC</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$59.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
@@ -528,16 +440,11 @@
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:40%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
                                     <h2 class="product-title">
                                         <a href="product.html">Shoes</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$63.00</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
@@ -566,11 +473,7 @@
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
-                                    <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:40%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
-                                    </div><!-- End .product-container -->
+                                    
                                     <h2 class="product-title">
                                         <a href="product.html">Headset White</a>
                                     </h2>
@@ -606,15 +509,12 @@
                                 </figure>
                                 <div class="product-details">
                                     <div class="ratings-container">
-                                        <div class="product-ratings">
-                                            <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                        </div><!-- End .product-ratings -->
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
                                         <a href="product.html">5CP3PS Laptop</a>
                                     </h2>
                                     <div class="price-box">
-                                        <span class="product-price">$334.99</span>
+                                        <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
 
                                     <div class="product-grid-action">
