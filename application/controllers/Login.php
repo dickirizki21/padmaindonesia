@@ -6,7 +6,7 @@ class Login extends CI_Controller {
 	// halaman login
 	public function index()
 	{
-		$data = array(	'title'		=> 'Padma Indonesia | Login');
+		$data = array(	'title'		=> 'Login - Padma Indonesia');
 		$this->load->view('login/list', $data, FALSE);
 	}
 }

@@ -6,7 +6,7 @@ class Home extends CI_Controller {
 	// Halaman Utama Website - Homepage
 	public function index()
 	{
-		$data = array(	'title'	=>	'Padma Indonesia - printing',
+		$data = array(	'title'	=>	'Home - Padma Indonesia',
 						'isi'	=>	'home/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);

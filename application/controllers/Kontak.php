@@ -6,7 +6,7 @@ class Kontak extends CI_Controller {
 	// Halaman Utama Website - Kontakpage
 	public function index()
 	{
-		$data = array(	'title'	=>	'Kontak | Padma Indonesia',
+		$data = array(	'title'	=>	'Kontak Kami - Padma Indonesia',
 						'isi'	=>	'Kontak/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);

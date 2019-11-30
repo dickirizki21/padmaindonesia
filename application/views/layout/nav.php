@@ -60,8 +60,13 @@
                 <div class="container">
                     <nav class="main-nav">
                         <ul class="menu sf-arrows">
-                            <li class="active"><a href="<?php echo base_url('home') ?>">Beranda</a></li>
-                            <li class="active"><a href="<?php echo base_url('tentang') ?>">Tentang Kami</a></li>
+                            <li>
+                                <a href="<?php echo base_url('home') ?>">Beranda</a>
+                            </li>
+
+                            <li>
+                                <a href="<?php echo base_url('tentang') ?>">Tentang Kami</a>
+                            </li>
                             <li class="megamenu-container">
                                 <a href="product.html" class="sf-with-ul">Produk</a>
                                 <div class="megamenu">
@@ -157,7 +162,7 @@
                                     <li><a href="index.html#">Footer Types</a></li>
                                 </ul>
                             </li>
-                            <li class="active"><a href="<?php echo base_url('kontak') ?>">Kontak Kami</a></li>
+                            <li><a href="<?php echo base_url('kontak') ?>"  class="sf-with-ul">Kontak Kami</a></li>
                         </ul>
                     </nav>
                 </div><!-- End .header-bottom -->

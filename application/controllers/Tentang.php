@@ -6,7 +6,7 @@ class Tentang extends CI_Controller {
 	// Halaman Utama Website - Tentangpage
 	public function index()
 	{
-		$data = array(	'title'	=>	'Tentang | Padma Indonesia',
+		$data = array(	'title'	=>	'Tentang Kami - Padma Indonesia',
 						'isi'	=>	'Tentang/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);
