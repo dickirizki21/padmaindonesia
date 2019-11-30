@@ -28,14 +28,6 @@
                                             <option value="5">Electronics</option>
                                             <option value="21">- Smart TVs</option>
                                             <option value="22">- Cameras</option>
-                                            <option value="63">- Games</option>
-                                            <option value="7">Home &amp; Garden</option>
-                                            <option value="11">Motors</option>
-                                            <option value="31">- Cars and Trucks</option>
-                                            <option value="32">- Motorcycles &amp; Powersports</option>
-                                            <option value="33">- Parts &amp; Accessories</option>
-                                            <option value="34">- Boats</option>
-                                            <option value="57">- Auto Tools &amp; Supplies</option>
                                         </select>
                                     </div><!-- End .select-custom -->
                                     <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
@@ -62,101 +54,19 @@
                         <ul class="menu sf-arrows">
                             <li class="active"><a href="<?php echo base_url('home') ?>">Beranda</a></li>
                             <li class="active"><a href="<?php echo base_url('tentang') ?>">Tentang Kami</a></li>
-                            <li class="megamenu-container">
-                                <a href="product.html" class="sf-with-ul">Produk</a>
-                                <div class="megamenu">
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <div class="menu-title">
-                                                        <a href="index.html#">Variations</a>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="product.html">Horizontal Thumbnails</a></li>
-                                                        <li><a href="product-full-width.html">Vertical Thumbnails<span class="tip tip-hot">Hot!</span></a></li>
-                                                        <li><a href="product.html">Inner Zoom</a></li>
-                                                        <li><a href="product-addcart-sticky.html">Addtocart Sticky</a></li>
-                                                        <li><a href="product-sidebar-left.html">Accordion Tabs</a></li>
-                                                    </ul>
-                                                </div><!-- End .col-lg-4 -->
-                                                <div class="col-lg-4">
-                                                    <div class="menu-title">
-                                                        <a href="index.html#">Variations</a>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                                                        <li><a href="product-simple.html">Simple Product</a></li>
-                                                        <li><a href="product-sidebar-left.html">With Left Sidebar</a></li>
-                                                    </ul>
-                                                </div><!-- End .col-lg-4 -->
-                                                <div class="col-lg-4">
-                                                    <div class="menu-title">
-                                                        <a href="index.html#">Product Layout Types</a>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="product.html">Default Layout</a></li>
-                                                        <li><a href="product-extended-layout.html">Extended Layout</a></li>
-                                                        <li><a href="product-full-width.html">Full Width Layout</a></li>
-                                                        <li><a href="product-grid-layout.html">Grid Images Layout</a></li>
-                                                        <li><a href="product-sticky-both.html">Sticky Both Side Info<span class="tip tip-hot">Hot!</span></a></li>
-                                                        <li><a href="product-sticky-info.html">Sticky Right Side Info</a></li>
-                                                    </ul>
-                                                </div><!-- End .col-lg-4 -->
-                                            </div><!-- End .row -->
-                                        </div><!-- End .col-lg-8 -->
-                                        <div class="col-lg-4">
-                                            <div class="banner">
-                                                <a href="index.html#">
-                                                    <img src="assets/images/menu-banner.jpg" alt="Menu banner" class="product-promo">
-                                                </a>
-                                            </div><!-- End .banner -->
-                                        </div><!-- End .col-lg-4 -->
-                                    </div><!-- End .row -->
-                                </div><!-- End .megamenu -->
-                            </li>
-                            <li>
-                                <a href="index.html#" class="sf-with-ul">Galeri</a>
-
+                            <li><a href="<?php echo base_url('produk') ?>">Produk</a>
                                 <ul>
-                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                    <li><a href="index.html#">Checkout</a>
-                                        <ul>
-                                            <li><a href="checkout-shipping.html">Checkout Shipping</a></li>
-                                            <li><a href="checkout-shipping-2.html">Checkout Shipping 2</a></li>
-                                            <li><a href="checkout-review.html">Checkout Review</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="index.html#">Dashboard</a>
-                                        <ul>
-                                            <li><a href="dashboard.html">Dashboard</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="index.html#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="single.html">Blog Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="index.html#" class="login-link">Login</a></li>
-                                    <li><a href="forgot-password.html">Forgot Password</a></li>
+                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 1</a></li>
+                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 2</a></li>
+                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 3</a></li>
+                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 4</a></li>
+                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 5</a></li>
+                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 6</a></li>
                                 </ul>
                             </li>
-                            <li><a href="index.html#" class="sf-with-ul">Berita</a>
-                                <ul>
-                                    <li><a href="index.html#">Header Types</a></li>
-                                    <li><a href="index.html#">Footer Types</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="index.html#" class="sf-with-ul">Toko Kami</a>
-                                <ul>
-                                    <li><a href="index.html#">Header Types</a></li>
-                                    <li><a href="index.html#">Footer Types</a></li>
-                                </ul>
-                            </li>
+                            <li class="active"><a href="<?php echo base_url('galeri') ?>">Galeri</a></li>
+                            <li><a href="<?php echo base_url('berita') ?>">Berita</a></li>
+                            <li><a href="<?php echo base_url('toko') ?>">Toko Kami</a></li>
                             <li class="active"><a href="<?php echo base_url('kontak') ?>">Kontak Kami</a></li>
                         </ul>
                     </nav>
