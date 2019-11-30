@@ -261,7 +261,8 @@
                                 <div class="product-details">
                                     <div class="ratings-container">
                                         <div class="product-ratings">
-                                            <span class="ratings" style="width:60%"></span><!-- End .ratings -->
+                                            <span class="ratings" style="width:60%"></span>
+                                            <!-- End .ratings -->
                                         </div><!-- End .product-ratings -->
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
