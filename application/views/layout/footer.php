@@ -7,66 +7,49 @@
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="widget">
-                                <h4 class="widget-title">Contact Us</h4>
+                                <h4 class="widget-title">Kontak Kami</h4>
                                 <ul class="contact-info">
                                     <li>
-                                        <span class="contact-info-label">Address:</span>123 Street Name, City, England
+                                        <span class="contact-info-label">Alamat <b>:</b></span>123 Street Name, City, England
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Phone:</span>Toll Free <a href="tel:">(123) 456-7890</a>
+                                        <span class="contact-info-label">Telepon / Wa <b>:</b></span>Toll Free <a href="tel:">(123) 456-7890</a>
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Email:</span> <a href="mailto:mail@example.com">mail@example.com</a>
+                                        <span class="contact-info-label">Email <b>:</b></span> <a href="mailto:mail@example.com">mail@example.com</a>
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Working Days/Hours:</span>
+                                        <span class="contact-info-label">Waktu Buka <b>:</b></span>
                                         Mon - Sun / 9:00AM - 8:00PM
                                     </li>
                                 </ul>
                                 <div class="social-icons">
                                     <a href="index.html#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-twitter"></i></a>
-                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-linkedin"></i></a>
+                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-phone"></i></a>
+                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
                                 </div><!-- End .social-icons -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-lg-3 -->
 
                         <div class="col-lg-9">
-                            <div class="widget widget-newsletter">
-                                <h4 class="widget-title">Subscribe newsletter</h4>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <p>Get all the latest information on Events,Sales and Offers. Sign up for newsletter today</p>
-                                    </div><!-- End .col-md-6 -->
-
-                                    <div class="col-md-6">
-                                        <form action="#">
-                                            <input type="email" class="form-control" placeholder="Email address" required>
-
-                                            <input type="submit" class="btn" value="Subscribe">
-                                        </form>
-                                    </div><!-- End .col-md-6 -->
-                                </div><!-- End .row -->
-                            </div><!-- End .widget -->
-
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="widget">
-                                        <h4 class="widget-title">My Account</h4>
+                                        <h4 class="widget-title">Produk Kami</h4>
 
                                         <div class="row">
                                             <div class="col-sm-6 col-md-5">
                                                 <ul class="links">
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="contact.html">Contact Us</a></li>
-                                                    <li><a href="my-account.html">My Account</a></li>
+                                                    <li><a href="about.html">Produk 1</a></li>
+                                                    <li><a href="contact.html">Produk 2</a></li>
+                                                    <li><a href="my-account.html">Produk 3</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                             <div class="col-sm-6 col-md-5">
                                                 <ul class="links">
-                                                    <li><a href="index.html#">Orders History</a></li>
-                                                    <li><a href="index.html#">Advanced Search</a></li>
-                                                    <li><a href="index.html#" class="login-link">Login</a></li>
+                                                    <li><a href="index.html#">Produk 4</a></li>
+                                                    <li><a href="index.html#">Produk 5</a></li>
+                                                    <li><a href="index.html#" class="login-link">Produk 6</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                         </div><!-- End .row -->
@@ -75,20 +58,20 @@
 
                                 <div class="col-md-7">
                                     <div class="widget">
-                                        <h4 class="widget-title">Main Features</h4>
+                                        <h4 class="widget-title">Mengapa Pilih Padma Indonesia?</h4>
                                         
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <ul class="links">
-                                                    <li><a href="index.html#">Super Fast Magento Theme</a></li>
-                                                    <li><a href="index.html#">1st Fully working Ajax Theme</a></li>
-                                                    <li><a href="index.html#">20 Unique Homepage Layouts</a></li>
+                                                    <li><a>Kualitas Printing HD</a></li>
+                                                    <li><a>Proses Produksi Cepat</a></li>
+                                                    <li><a>Produk Reject 100% Uang Kembali</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                             <div class="col-sm-6">
                                                 <ul class="links">
-                                                    <li><a href="index.html#">Powerful Admin Panel</a></li>
-                                                    <li><a href="index.html#">Mobile & Retina Optimized</a></li>
+                                                    <li><a>Pelayanan Terbaik</a></li>
+                                                    <li><a>Harga Terjangkau</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                         </div><!-- End .row -->
@@ -102,9 +85,7 @@
 
             <div class="container">
                 <div class="footer-bottom">
-                    <p class="footer-copyright">Porto eCommerce. &copy;  2018.  All Rights Reserved</p>
-
-                    <img src="assets/images/payments.png" alt="payment methods" class="footer-payments">
+                    <p class="footer-copyright">&copy; Padma Indonesia 2019</p>
                 </div><!-- End .footer-bottom -->
             </div><!-- End .container -->
         </footer><!-- End .footer -->

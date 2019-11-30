@@ -53,19 +53,19 @@
                 <div class="contact-info">
                     <div>
                         <i class="icon-phone"></i>
-                        <p><a href="tel:">0201 203 2032</a></p>
+                        <p style="padding-top: 10px"><a href="tel:">0201 203 2032</a></p>
                     </div>
                     <div>
-                        <i class="icon-whatsapp"></i>
-                        <p><a href="tel:">201-123-3922</a></p>
+                        <i class="icon-facebook"></i>
+                        <p style="padding-top: 10px"><a href="tel:">porto_fb</a></p>
                     </div>
                     <div>
                         <i class="icon-mail-alt"></i>
-                        <p><a href="mailto:#">porto@gmail.com</a></p>
+                        <p style="padding-top: 10px"><a href="mailto:#">porto@gmail.com</a></p>
                     </div>
                     <div>
                         <i class="icon-instagram"></i>
-                        <p>porto_skype</p>
+                        <p style="padding-top: 10px">porto_skype</p>
                     </div>
                 </div><!-- End .contact-info -->
             </div><!-- End .col-md-4 -->

@@ -1,44 +1,41 @@
-					    < swap file by the name "application/views/layout/.nav.php.swp"
-          owned by: user   dated: Sat Nov 30 1323:29 2019
-         file name: /c/xampp/htdocs/padmaindonesia/application/views/layout/nav.php
-          modified: YES
-         user name: user   host name: OMDIK
-        process ID: 1544
-While opening file "application/views/layout/nav.php"
-             dated: Sat Nov 30 13:28:13 2019
-      NEWER than swap file!
+</div><!-- End .header-dropown -->
+                    </div><!-- End .header-right -->
+                </div><!-- End .container -->
+            </div><!-- End .header-top -->
 
-(1) Another program may be editing the same file.  If this is the case,
-    be careful not to end up with two different instances of the same
-    file when making changes.  Quit, or continue with caution.
-(2) An edit session for this file crashed.
-    If this is the case, use ":recover" or "vim -r application/views/layout/nav.php"
-    to recover the changes (see ":help recovery").
-    If you did this already, delete the swap file "application/views/layout/.nav.php.swp"
-    to avoid this message.
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-left">
+                        <a href="index.html" class="logo">
+                            <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/logo.png" alt="Padmaindonesia logo">
+                        </a>
+                    </div><!-- End .header-left -->
 
-Swap file "application/views/layout/.nav.php.swp" already exists!
-[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort:                                                                                                                                               Found a swap file by the name "application/views/layout/.nav.php.swp"
-          owned by: user   dated: Sat Nov 30 13:23:29 2019
-         file name: /c/xampp/htdocs/padmaindonesia/application/views/layout/nav.php
-          modified: YES
-         user name: user   host name: OMDIK
-        process ID: 1544
-While opening file "application/views/layout/nav.php"
-             dated: Sat Nov 30 13:28:13 2019
-      NEWER than swap file!
-
-(1) Another program may be editing the same file.  If this is the case,
-    be careful not to end up with two different instances of the same
-    file when making changes.  Quit, or continue with caution.
-(2) An edit session for this file crashed.
-    If this is the case, use ":recover" or "vim -r application/views/layout/nav.php"
-option value="13">- Men</option>
+                    <div class="header-center">
+                        <div class="header-search">
+                            <a href="index.html#" class="search-toggle" role="button"><i class="icon-magnifier"></i></a>
+                            <form action="#" method="get">
+                                <div class="header-search-wrapper">
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search..." required>
+                                    <div class="select-custom">
+                                        <select id="cat" name="cat">
+                                            <option value="">All Categories</option>
+                                            <option value="4">Fashion</option>
+                                            <option value="12">- Women</option>
+                                            <option value="13">- Men</option>
                                             <option value="66">- Jewellery</option>
                                             <option value="67">- Kids Fashion</option>
                                             <option value="5">Electronics</option>
                                             <option value="21">- Smart TVs</option>
                                             <option value="22">- Cameras</option>
+                                            <option value="63">- Games</option>
+                                            <option value="7">Home &amp; Garden</option>
+                                            <option value="11">Motors</option>
+                                            <option value="31">- Cars and Trucks</option>
+                                            <option value="32">- Motorcycles &amp; Powersports</option>
+                                            <option value="33">- Parts &amp; Accessories</option>
+                                            <option value="34">- Boats</option>
+                                            <option value="57">- Auto Tools &amp; Supplies</option>
                                         </select>
                                     </div><!-- End .select-custom -->
                                     <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
@@ -63,7 +60,6 @@ option value="13">- Men</option>
                 <div class="container">
                     <nav class="main-nav">
                         <ul class="menu sf-arrows">
-<<<<<<< HEAD
                             <li>
                                 <a href="<?php echo base_url('home') ?>">Beranda</a>
                             </li>
@@ -161,104 +157,14 @@ option value="13">- Men</option>
                                 </ul>
                             </li>
                             <li><a href="index.html#" class="sf-with-ul">Toko Kami</a>
-=======
-                            <li class="active"><a href="<?php echo base_url('home') ?>">Beranda</a></li>
-                            <li class="active"><a href="<?php echo base_url('tentang') ?>">Tentang Kami</a></li>
-                            <li><a href="<?php echo base_url('produk') ?>">Produk</a>
->>>>>>> d742630865dc9f256cc73e0a827c037f8454f785
                                 <ul>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 1</a></li>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 2</a></li>
-                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 3</a></li>
-                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 4</a></li>
-                                    <li><a href="<?php 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/header><!-- End .header -->
+                                    <li><a href="index.html#">Header Types</a></li>
+                                    <li><a href="index.html#">Footer Types</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="<?php echo base_url('kontak') ?>"  class="sf-with-ul">Kontak Kami</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- End .header-bottom -->
+            </div><!-- End .header-bottom -->
+        </header><!-- End .header -->
