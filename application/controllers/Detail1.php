@@ -6,8 +6,8 @@ class detail1 extends CI_Controller {
 	// Halaman Utama Website - detail1page
 	public function index()
 	{
-		$data = array(	'title'	=>	'detail1 | Padma Indonesia',
-						'isi'	=>	'detail1/list'
+		$data = array(	'title'	=>	'Produk Detail | Padma Indonesia',
+						'isi'	=>	'produk/detail1'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}

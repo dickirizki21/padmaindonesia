@@ -1,4 +1,53 @@
-<div class="col-lg-5">
+        <main class="main">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="product-full-width.html#">Electronics</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Headsets</li>
+                    </ol>
+                </div><!-- End .container -->
+            </nav>
+
+            <div class="container">
+                <div class="product-single-container product-single-default">
+                    <div class="row">
+                        <div class="col-lg-7 product-single-gallery">
+                            <div class="sticky-slider">
+                                <div class="product-slider-container product-item">
+                                    <div class="product-single-carousel owl-carousel owl-theme">
+                                        <div class="product-item">
+                                            <img class="product-single-image" src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-1-big.jpg" data-zoom-image="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-1-big.jpg"/>
+                                        </div>
+                                        
+                                        <div class="product-item">
+                                            <img class="product-single-image" src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-2-big.jpg" data-zoom-image="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-2-big.jpg"/>
+                                        </div>
+                                        <div class="product-item">
+                                            <img class="product-single-image" src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-3-big.jpg" data-zoom-image="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-3-big.jpg"/>
+                                        </div>
+                                    </div>
+                                    <!-- End .product-single-carousel -->
+                                    <span class="prod-full-screen">
+                                        <i class="icon-plus"></i>
+                                    </span>
+                                </div>
+
+                                <div class="prod-thumbnail row owl-dots transparent-dots" id='carousel-custom-dots'>
+                                    <div class="owl-dot">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-1.jpg"/>
+                                    </div>
+                                    <div class="owl-dot">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-2.jpg"/>
+                                    </div>
+                                    <div class="owl-dot">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/zoom/product-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End .col-md-6 -->
+
+                        <div class="col-lg-5">
                             <div class="product-single-details">
                                 <h1 class="product-title">Silver Porto Headset</h1>
 
@@ -211,7 +260,7 @@
                 <div class="container">
                     <h3>Concept Film</h3>
                     <a href="https://www.youtube.com/watch?v=Ph_VkTVmXh4" class="video-btn">
-                        Watch <img src="assets/images/products/single/extended/icon-play.png" alt="play">
+                        Watch <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/single/extended/icon-play.png" alt="play">
                     </a>
                 </div><!-- End .container -->
             </div><!-- End .product-single-video -->
@@ -224,7 +273,7 @@
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="assets/images/products/product-1.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
@@ -260,7 +309,7 @@
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="assets/images/products/product-2.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
@@ -296,7 +345,7 @@
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="assets/images/products/product-3.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-3.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
@@ -332,7 +381,7 @@
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="assets/images/products/product-4.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-4.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
@@ -368,7 +417,7 @@
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="assets/images/products/product-5.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-5.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>

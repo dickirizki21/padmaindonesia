@@ -24,9 +24,9 @@
                                     </li>
                                 </ul>
                                 <div class="social-icons">
-                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-phone"></i></a>
-                                    <a href="index.html#" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+                                    <a href="<?php echo base_url('detail1') ?>" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
+                                    <a href="<?php echo base_url('detail1') ?>" class="social-icon" target="_blank"><i class="icon-phone"></i></a>
+                                    <a href="<?php echo base_url('detail1') ?>" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
                                 </div><!-- End .social-icons -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-lg-3 -->
@@ -40,16 +40,16 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-5">
                                                 <ul class="links">
-                                                    <li><a href="about.html">Produk 1</a></li>
-                                                    <li><a href="contact.html">Produk 2</a></li>
-                                                    <li><a href="my-account.html">Produk 3</a></li>
+                                                    <li><a href="<?php echo base_url('detail1') ?>">Produk 1</a></li>
+                                                    <li><a href="<?php echo base_url('detail1') ?>">Produk 2</a></li>
+                                                    <li><a href="<?php echo base_url('detail1') ?>">Produk 3</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                             <div class="col-sm-6 col-md-5">
                                                 <ul class="links">
-                                                    <li><a href="index.html#">Produk 4</a></li>
-                                                    <li><a href="index.html#">Produk 5</a></li>
-                                                    <li><a href="index.html#" class="login-link">Produk 6</a></li>
+                                                    <li><a href="<?php echo base_url('detail1') ?>">Produk 4</a></li>
+                                                    <li><a href="<?php echo base_url('detail1') ?>">Produk 5</a></li>
+                                                    <li><a href="<?php echo base_url('detail1') ?>" class="login-link">Produk 6</a></li>
                                                 </ul>
                                             </div><!-- End .col-sm-6 -->
                                         </div><!-- End .row -->

@@ -6,7 +6,7 @@
             <div class="header-middle">
                 <div class="container">
                     <div class="header-left">
-                        <a href="index.html" class="logo">
+                        <a href="<?php echo base_url('home') ?>" class="logo">
                             <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/logo.png" alt="Padmaindonesia logo">
                         </a>
                     </div><!-- End .header-left -->

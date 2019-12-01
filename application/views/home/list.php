@@ -10,7 +10,7 @@
                                         <h3>Get up to <span>60%</span> off</h3>
                                         <h1>Summer Sale</h1>
                                         <p>Limited items available at this price.</p>
-                                        <a href="<?php echo base_url() ?>assets/padma-home/demo-4/category.html" class="btn btn-dark">Shop Now</a>
+                                        <a href="category.html#" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
 
@@ -20,7 +20,7 @@
                                         <h3>200++ <span>PRODUCT</span></h3>
                                         <h1>SALE!!!</h1>
                                         <p>200 Product...</p>
-                                        <a href="<?php echo base_url() ?>assets/padma-home/demo-4/category.html" class="btn btn-dark">Shop Now</a>
+                                        <a href="category.html#" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
 
@@ -30,7 +30,7 @@
                                         <h3>up to <span>40%</span> off</h3>
                                         <h1>NEW ARRIVALS</h1>
                                         <p>Starting at $9</p>
-                                        <a href="<?php echo base_url() ?>assets/padma-home/demo-4/category.html" class="btn btn-dark">Shop Now</a>
+                                        <a href="category.html#" class="btn btn-dark">Shop Now</a>
                                     </div><!-- End .home-slide-content -->
                                 </div><!-- End .home-slide -->
                             </div><!-- End .home-slider -->
@@ -42,15 +42,15 @@
 
                                 <div class="side-menu-body">
                                     <ul>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-shirt"></i>Kategori 1</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-computer"></i>Kategori 2</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-gift"></i>Kategori 2</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-couch"></i>Kategori 3</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-computer"></i>Kategori 4</a></li>
-                                        <li><a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#"><i class="icon-cat-sport"></i>Kategori 2</a></li>
+                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-shirt"></i>Kategori 1</a></li>
+                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-computer"></i>Kategori 2</a></li>
+                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-gift"></i>Kategori 2</a></li>
+                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-couch"></i>Kategori 3</a></li>
+                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-computer"></i>Kategori 4</a></li>
+                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-sport"></i>Kategori 2</a></li>
                                     </ul>
 
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#" class="btn btn-block btn-primary">CEK <strong>SEKARANG!!!</strong></a>
+                                    <a href="index.html#" class="btn btn-block btn-primary">CEK <strong>SEKARANG!!!</strong></a>
                                 </div><!-- End .side-menu-body -->
                             </div><!-- End .side-custom-menu -->
                         </div><!-- End .col-lg-3 -->
@@ -94,7 +94,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-sm-6">
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-1.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
@@ -106,7 +106,7 @@
                             </div><!-- End .banner -->
 
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-3.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
@@ -114,19 +114,19 @@
 
                         <div class="col-lg-3 col-sm-6 order-lg-last">
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-4.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
 
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-5.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
 
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-6.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
@@ -134,19 +134,19 @@
 
                         <div class="col-lg-6">
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-7.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
 
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-8.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
 
                             <div class="banner banner-image">
-                                <a href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#">
+                                <a href="<?php echo base_url('produk') ?>">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-9.jpg" alt="banner">
                                 </a>
                             </div><!-- End .banner -->
@@ -165,10 +165,10 @@
                     <div class="row">
                         <div class="product-wrapper">
                     <div class="row row-sm category-grid">
-                        <div class="col-6 col-md-3">
+                        <div class="col-8 col-md-4">
                             <div class="grid-product">
                                 <figure class="product-image-container">
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/product.html" class="product-image">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                         <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                     </a>
                                     <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
@@ -187,10 +187,10 @@
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
 
-                        <div class="col-6 col-md-3">
+                        <div class="col-8 col-md-4">
                             <div class="grid-product">
                                 <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                         <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
                                     </a>
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
@@ -214,325 +214,251 @@
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
 
-                        <div class="col-6 col-md-3">
+                        <div class="col-8 col-md-4">
                             <div class="grid-product">
                                 <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-3.jpg" alt="product">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                     </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>
                                 <div class="product-details">
                                     <div class="ratings-container">
-                    
+                                        
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
-                                        <a href="product.html">Computer Mouse</a>
+                                        <a href="product.html">USB Flash</a>
                                     </h2>
                                     <div class="price-box">
                                         <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
-
-                                    
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
 
-                        <div class="col-6 col-md-3">
+                        <div class="col-8 col-md-4">
                             <div class="grid-product">
                                 <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-4.jpg" alt="product">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
                                     </a>
                                     <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                      
-                                    <h2 class="product-title">
-                                        <a href="product.html">Laptop</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                   
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-5.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    
-                                    <h2 class="product-title">
-                                        <a href="product.html">Wireless Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-6.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-hot">Hot</span>
-                                </figure>
-                                <div class="product-details">
-                                      
-                                    <h2 class="product-title">
-                                        <a href="product.html">Active NC</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-7.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-hot">Hot</span>
-                                </figure>
-                                <div class="product-details">
-                                    
-                                    <h2 class="product-title">
-                                        <a href="product.html">Back Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-8.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <h2 class="product-title">
-                                        <a href="product.html">Over Earphone</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-9.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    
-                                    <h2 class="product-title">
-                                        <a href="product.html">Passive NC</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-10.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <h2 class="product-title">
-                                        <a href="product.html">Shoes</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    
-                                    <h2 class="product-title">
-                                        <a href="product.html">Headset White</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">$83.99</span>
-                                    </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-3">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="product.html" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-12.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-hot">Hot</span>
+                                    <span class="product-label label-sale">-20%</span>
+                                    <span class="product-label label-hot">New</span>
                                 </figure>
                                 <div class="product-details">
                                     <div class="ratings-container">
+                                        
                                     </div><!-- End .product-container -->
                                     <h2 class="product-title">
-                                        <a href="product.html">5CP3PS Laptop</a>
+                                        <a href="product.html">Inline Headset</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="old-price">Rp.20.000</span>
+                                        <span class="product-price">Rp.25.000</span>
+                                    </div><!-- End .price-box -->
+
+                                    
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
+                                    </a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">USB Flash</a>
                                     </h2>
                                     <div class="price-box">
                                         <span class="product-price">Rp.20.000</span>
                                     </div><!-- End .price-box -->
-
-                                    <div class="product-grid-action">
-                                        <a href="category-flex-grid.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                            <span>Add to Wishlist</span>
-                                        </a>
-                                        
-                                        <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                            <span>Add to Cart</span>
-                                        </a>
-
-                                        <a href="category-flex-grid.html#" class="paction add-compare" title="Add to Compare">
-                                            <span>Add to Compare</span>
-                                        </a>
-                                    </div><!-- End .product-action -->
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->
                         </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                    <span class="product-label label-sale">-20%</span>
+                                    <span class="product-label label-hot">New</span>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">Inline Headset</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="old-price">Rp.20.000</span>
+                                        <span class="product-price">Rp.25.000</span>
+                                    </div><!-- End .price-box -->
+
+                                    
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
+                                    </a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">USB Flash</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="product-price">Rp.20.000</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                    <span class="product-label label-sale">-20%</span>
+                                    <span class="product-label label-hot">New</span>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">Inline Headset</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="old-price">Rp.20.000</span>
+                                        <span class="product-price">Rp.25.000</span>
+                                    </div><!-- End .price-box -->
+
+                                    
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
+                                    </a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">USB Flash</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="product-price">Rp.20.000</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                    <span class="product-label label-sale">-20%</span>
+                                    <span class="product-label label-hot">New</span>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">Inline Headset</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="old-price">Rp.20.000</span>
+                                        <span class="product-price">Rp.25.000</span>
+                                    </div><!-- End .price-box -->
+
+                                    
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
+                                    </a>
+                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">USB Flash</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="product-price">Rp.20.000</span>
+                                    </div><!-- End .price-box -->
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
+                        <div class="col-8 col-md-4">
+                            <div class="grid-product">
+                                <figure class="product-image-container">
+                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
+                                    </a>
+                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
+                                    <span class="product-label label-sale">-20%</span>
+                                    <span class="product-label label-hot">New</span>
+                                </figure>
+                                <div class="product-details">
+                                    <div class="ratings-container">
+                                        
+                                    </div><!-- End .product-container -->
+                                    <h2 class="product-title">
+                                        <a href="product.html">Inline Headset</a>
+                                    </h2>
+                                    <div class="price-box">
+                                        <span class="old-price">Rp.20.000</span>
+                                        <span class="product-price">Rp.25.000</span>
+                                    </div><!-- End .price-box -->
+
+                                    
+                                </div><!-- End .product-details -->
+                            </div><!-- End .product -->
+                        </div><!-- End .col-md-4 -->
+
                     </div><!-- End .row -->
                 </div>
                     </div>
