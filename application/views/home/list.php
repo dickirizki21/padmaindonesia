@@ -16,7 +16,7 @@
 
                                 <div class="home-slide">
                                     <div class="owl-lazy slide-bg" data-src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/slider/slider-2.jpg"></div>
-                                    <div class="home-slide-content">
+                                    <div class="home-slide-content text-white">
                                         <h3>200++ <span>PRODUCT</span></h3>
                                         <h1>SALE!!!</h1>
                                         <p>200 Product...</p>
@@ -26,7 +26,7 @@
 
                                 <div class="home-slide">
                                     <div class="owl-lazy slide-bg" data-src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/slider/slider-3.jpg"></div>
-                                    <div class="home-slide-content">
+                                    <div class="home-slide-content text-white">
                                         <h3>up to <span>40%</span> off</h3>
                                         <h1>NEW ARRIVALS</h1>
                                         <p>Starting at $9</p>
@@ -170,6 +170,7 @@
                                 <figure class="product-image-container">
                                     <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                         <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
+                                        
                                     </a>
                                     <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                                 </figure>

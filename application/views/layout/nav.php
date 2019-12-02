@@ -7,7 +7,8 @@
                 <div class="container">
                     <div class="header-left">
                         <a href="<?php echo base_url('home') ?>" class="logo">
-                            <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/logo.png" alt="Padmaindonesia logo">
+                           <!--  <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/logo.png" alt="Padmaindonesia logo"> -->
+                           <h2 style="color: #ffff;">PADMA INDONESIA</h2>
                         </a>
                     </div><!-- End .header-left -->
 

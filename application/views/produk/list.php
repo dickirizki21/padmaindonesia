@@ -58,7 +58,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                 </a>
                             </figure>
@@ -79,7 +79,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
                                 </a>
                             </figure>
@@ -100,7 +100,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-3.jpg" alt="product">
                                 </a>
                             </figure>
@@ -121,7 +121,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-4.jpg" alt="product">
                                 </a>
                             </figure>
@@ -142,7 +142,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-5.jpg" alt="product">
                                 </a>
                             </figure>
@@ -163,7 +163,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-6.jpg" alt="product">
                                 </a>
                             </figure>
@@ -184,7 +184,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-7.jpg" alt="product">
                                 </a>
                             </figure>
@@ -205,7 +205,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-8.jpg" alt="product">
                                 </a>
                             </figure>
@@ -226,7 +226,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-9.jpg" alt="product">
                                 </a>
                             </figure>
@@ -247,7 +247,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-10.jpg" alt="product">
                                 </a>
                             </figure>
@@ -268,7 +268,7 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
                                     <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
@@ -289,8 +289,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-12.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -310,8 +310,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-13.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -331,8 +331,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-14.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -352,8 +352,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-15.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -373,8 +373,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-16.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -394,8 +394,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-17.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -415,8 +415,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-18.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -436,8 +436,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-19.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -457,8 +457,8 @@
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
-                                <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-20.jpg" alt="product">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
                                 </a>
                             </figure>
                             <div class="product-details">
@@ -474,6 +474,50 @@
                             </div><!-- End .product-details -->
                         </div><!-- End .product -->
                     </div><!-- End .col-xl-3 -->
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="product">
+                            <figure class="product-image-container">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
+                                </a>
+                            </figure>
+                            <div class="product-details">
+                                <div class="price-box">
+                                    <span class="product-price">Nama Produk</span>
+                                </div><!-- End .price-box -->
+
+                                <div class="product-action">
+                                    <a href="<?php echo base_url('detail1') ?>" class="paction add-cart" title="Add to Cart">
+                                        <span>Detail Produk</span>
+                                    </a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product-details -->
+                        </div><!-- End .product -->
+                    </div><!-- End .col-xl-3 -->
+
+                    <div class="col-6 col-md-4 col-xl-3">
+                        <div class="product">
+                            <figure class="product-image-container">
+                                <a href="<?php echo base_url('detail1') ?>" class="product-image">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-11.jpg" alt="product">
+                                </a>
+                            </figure>
+                            <div class="product-details">
+                                <div class="price-box">
+                                    <span class="product-price">Nama Produk</span>
+                                </div><!-- End .price-box -->
+
+                                <div class="product-action">
+                                    <a href="<?php echo base_url('detail1') ?>" class="paction add-cart" title="Add to Cart">
+                                        <span>Detail Produk</span>
+                                    </a>
+                                </div><!-- End .product-action -->
+                            </div><!-- End .product-details -->
+                        </div><!-- End .product -->
+                    </div><!-- End .col-xl-3 -->
+
+                    
                 </div><!-- End .row -->
 
                 <nav class="toolbox toolbox-pagination">

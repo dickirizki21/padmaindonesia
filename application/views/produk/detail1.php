@@ -51,14 +51,6 @@
                             <div class="product-single-details">
                                 <h1 class="product-title">Silver Porto Headset</h1>
 
-                                <div class="ratings-container">
-                                    <div class="product-ratings">
-                                        <span class="ratings" style="width:60%"></span><!-- End .ratings -->
-                                    </div><!-- End .product-ratings -->
-
-                                    <a href="product-full-width.html#" class="rating-link">( 6 Reviews )</a>
-                                </div><!-- End .product-container -->
-
                                 <div class="price-box">
                                     <span class="old-price">$81.00</span>
                                     <span class="product-price">$101.00</span>
@@ -67,60 +59,12 @@
                                 <div class="product-desc">
                                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
                                 </div><!-- End .product-desc -->
-
-                                <div class="product-filters-container">
-                                    <div class="product-single-filter">
-                                        <label>Colors:</label>
-                                        <ul class="config-swatch-list">
-                                            <li class="active">
-                                                <a href="product-full-width.html#" style="background-color: #6085a5;"></a>
-                                            </li>
-                                            <li>
-                                                <a href="product-full-width.html#" style="background-color: #ab6e6e;"></a>
-                                            </li>
-                                            <li>
-                                                <a href="product-full-width.html#" style="background-color: #b19970;"></a>
-                                            </li>
-                                            <li>
-                                                <a href="product-full-width.html#" style="background-color: #11426b;"></a>
-                                            </li>
-                                        </ul>
-                                    </div><!-- End .product-single-filter -->
-                                </div><!-- End .product-filters-container -->
-
-                                <div class="product-action">
-                                    <div class="product-single-qty">
-                                        <input class="horizontal-quantity form-control" type="text">
-                                    </div><!-- End .product-single-qty -->
-
-                                    <a href="cart.html" class="paction add-cart" title="Add to Cart">
-                                        <span>Add to Cart</span>
-                                    </a>
-                                    <a href="product-full-width.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                        <span>Add to Wishlist</span>
-                                    </a>
-                                    <a href="product-full-width.html#" class="paction add-compare" title="Add to Compare">
-                                        <span>Add to Compare</span>
-                                    </a>
-                                </div><!-- End .product-action -->
-
-                                <div class="product-single-share mb-4">
-                                    <label>Share:</label>
-                                    <!-- www.addthis.com share plugin-->
-                                    <div class="addthis_inline_share_toolbox"></div>
-                                </div><!-- End .product single-share -->
                             </div><!-- End .product-single-details -->
 
                             <div class="product-single-tabs">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="product-tab-desc" data-toggle="tab" href="product-full-width.html#product-desc-content" role="tab" aria-controls="product-desc-content" aria-selected="true">Description</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="product-tab-tags" data-toggle="tab" href="product-full-width.html#product-tags-content" role="tab" aria-controls="product-tags-content" aria-selected="false">Tags</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="product-tab-reviews" data-toggle="tab" href="product-full-width.html#product-reviews-content" role="tab" aria-controls="product-reviews-content" aria-selected="false">Reviews</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
@@ -256,13 +200,13 @@
                 </div><!-- End .product-single-container -->
             </div><!-- End .container -->
 
-            <div class="product-single-video" style="background-image: url('assets/images/products/single/extended/bg-4.jpg');">
-                <div class="container">
+            <div class="product-single-video" style="background-image: url('<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/single/extended/bg-4.jpg');">
+                <!-- <div class="container">
                     <h3>Concept Film</h3>
                     <a href="https://www.youtube.com/watch?v=Ph_VkTVmXh4" class="video-btn">
                         Watch <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/single/extended/icon-play.png" alt="play">
                     </a>
-                </div><!-- End .container -->
+                </div><!-- End .container --> -->
             </div><!-- End .product-single-video -->
 
             <div class="featured-section">
@@ -278,29 +222,18 @@
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
                             <div class="product-details">
-                                <div class="ratings-container">
-                                    <div class="product-ratings">
-                                        <span class="ratings" style="width:80%"></span><!-- End .ratings -->
-                                    </div><!-- End .product-ratings -->
-                                </div><!-- End .product-container -->
+                                
                                 <h2 class="product-title">
                                     <a href="product.html">USB Flash</a>
                                 </h2>
                                 <div class="price-box">
-                                    <span class="product-price">$28.00</span>
+                                    <span class="product-price">Rp.20.000</span>
                                 </div><!-- End .price-box -->
 
                                 <div class="product-action">
-                                    <a href="product-full-width.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                        <span>Add to Wishlist</span>
-                                    </a>
-
+                                    
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                        <span>Add to Cart</span>
-                                    </a>
-
-                                    <a href="product-full-width.html#" class="paction add-compare" title="Add to Compare">
-                                        <span>Add to Compare</span>
+                                        <span>Detail</span>
                                     </a>
                                 </div><!-- End .product-action -->
                             </div><!-- End .product-details -->
@@ -309,145 +242,102 @@
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
                             <div class="product-details">
-                                <div class="ratings-container">
-                                    <div class="product-ratings">
-                                        <span class="ratings" style="width:100%"></span><!-- End .ratings -->
-                                    </div><!-- End .product-ratings -->
-                                </div><!-- End .product-container -->
+                                
                                 <h2 class="product-title">
-                                    <a href="product.html">Inline Headset</a>
+                                    <a href="product.html">USB Flash</a>
                                 </h2>
                                 <div class="price-box">
-                                    <span class="product-price">$55.00</span>
+                                    <span class="product-price">Rp.20.000</span>
                                 </div><!-- End .price-box -->
 
                                 <div class="product-action">
-                                    <a href="product-full-width.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                        <span>Add to Wishlist</span>
-                                    </a>
-
+                                    
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                        <span>Add to Cart</span>
-                                    </a>
-
-                                    <a href="product-full-width.html#" class="paction add-compare" title="Add to Compare">
-                                        <span>Add to Compare</span>
+                                        <span>Detail</span>
                                     </a>
                                 </div><!-- End .product-action -->
                             </div><!-- End .product-details -->
                         </div><!-- End .product -->
 
-                        <div class="product">
+                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-3.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
                             <div class="product-details">
-                                <div class="ratings-container">
-                                    <div class="product-ratings">
-                                        <span class="ratings" style="width:40%"></span><!-- End .ratings -->
-                                    </div><!-- End .product-ratings -->
-                                </div><!-- End .product-container -->
+                                
                                 <h2 class="product-title">
-                                    <a href="product.html">Computer Mouse</a>
+                                    <a href="product.html">USB Flash</a>
                                 </h2>
                                 <div class="price-box">
-                                    <span class="product-price">$8.90</span>
+                                    <span class="product-price">Rp.20.000</span>
                                 </div><!-- End .price-box -->
 
                                 <div class="product-action">
-                                    <a href="product-full-width.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                        <span>Add to Wishlist</span>
-                                    </a>
-
+                                    
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                        <span>Add to Cart</span>
-                                    </a>
-
-                                    <a href="product-full-width.html#" class="paction add-compare" title="Add to Compare">
-                                        <span>Add to Compare</span>
+                                        <span>Detail</span>
                                     </a>
                                 </div><!-- End .product-action -->
                             </div><!-- End .product-details -->
                         </div><!-- End .product -->
 
-                        <div class="product">
+                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-4.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
                             <div class="product-details">
-                                <div class="ratings-container">
-                                    <div class="product-ratings">
-                                        <span class="ratings" style="width:0%"></span><!-- End .ratings -->
-                                    </div><!-- End .product-ratings -->
-                                </div><!-- End .product-container -->
+                                
                                 <h2 class="product-title">
-                                    <a href="product.html">Porto Laptop</a>
+                                    <a href="product.html">USB Flash</a>
                                 </h2>
                                 <div class="price-box">
-                                    <span class="product-price">$335.00</span>
+                                    <span class="product-price">Rp.20.000</span>
                                 </div><!-- End .price-box -->
 
                                 <div class="product-action">
-                                    <a href="product-full-width.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                        <span>Add to Wishlist</span>
-                                    </a>
-
+                                    
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                        <span>Add to Cart</span>
-                                    </a>
-
-                                    <a href="product-full-width.html#" class="paction add-compare" title="Add to Compare">
-                                        <span>Add to Compare</span>
+                                        <span>Detail</span>
                                     </a>
                                 </div><!-- End .product-action -->
                             </div><!-- End .product-details -->
                         </div><!-- End .product -->
 
-                        <div class="product">
+                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="product.html" class="product-image">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-5.jpg" alt="product">
+                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
                                 </a>
                                 <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
                             </figure>
                             <div class="product-details">
-                                <div class="ratings-container">
-                                    <div class="product-ratings">
-                                        <span class="ratings" style="width:50%"></span><!-- End .ratings -->
-                                    </div><!-- End .product-ratings -->
-                                </div><!-- End .product-container -->
+                                
                                 <h2 class="product-title">
-                                    <a href="product.html">Wireless Headset</a>
+                                    <a href="product.html">Rp.20.000</a>
                                 </h2>
                                 <div class="price-box">
-                                    <span class="product-price">$79.00</span>
+                                    <span class="product-price">Rp.20.000</span>
                                 </div><!-- End .price-box -->
 
                                 <div class="product-action">
-                                    <a href="product-full-width.html#" class="paction add-wishlist" title="Add to Wishlist">
-                                        <span>Add to Wishlist</span>
-                                    </a>
-
+                                    
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
-                                        <span>Add to Cart</span>
-                                    </a>
-
-                                    <a href="product-full-width.html#" class="paction add-compare" title="Add to Compare">
-                                        <span>Add to Compare</span>
+                                        <span>Detail</span>
                                     </a>
                                 </div><!-- End .product-action -->
                             </div><!-- End .product-details -->
+                        </div><!-- End .product -->
                         </div><!-- End .product -->
                     </div><!-- End .featured-proucts -->
                 </div><!-- End .container -->
