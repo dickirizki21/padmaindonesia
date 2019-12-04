@@ -158,7 +158,7 @@
             <div class="mb-4"></div><!-- margin -->
 <!-- LIST PRODUCT BARU -->
             <div class="info-boxes-container">
-                <center><h2>Hot Sales Minggu Ini</h2></center>
+                <center><h2 style="padding-top: 50px; padding-bottom: 30px">---------------------------------------------------------------o Hot Sales Minggu Ini o---------------------------------------------------------------</h2></center>
             </div><!-- End .info-boxes-container -->
             <div class="banners-group">
                 <div class="container">

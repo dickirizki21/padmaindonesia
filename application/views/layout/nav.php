@@ -59,10 +59,10 @@
                                 <ul>
                                     <li><a href="<?php echo base_url('produk1') ?>">Produk 1</a></li>
                                     <li><a href="<?php echo base_url('produk1') ?>">Produk 2</a></li>
-                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 3</a></li>
-                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 4</a></li>
-                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 5</a></li>
-                                    <li><a href="<?php echo base_url('terkini') ?>">Produk 6</a></li>
+                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 3</a></li>
+                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 4</a></li>
+                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 5</a></li>
+                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 6</a></li>
                                 </ul>
                             </li>
                             <li class="active"><a href="<?php echo base_url('galeri') ?>">Galeri</a></li>

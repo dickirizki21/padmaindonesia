@@ -200,15 +200,6 @@
                 </div><!-- End .product-single-container -->
             </div><!-- End .container -->
 
-            <div class="product-single-video" style="background-image: url('<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/single/extended/bg-4.jpg');">
-                <!-- <div class="container">
-                    <h3>Concept Film</h3>
-                    <a href="https://www.youtube.com/watch?v=Ph_VkTVmXh4" class="video-btn">
-                        Watch <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/single/extended/icon-play.png" alt="play">
-                    </a>
-                </div><!-- End .container --> -->
-            </div><!-- End .product-single-video -->
-
             <div class="featured-section">
                 <div class="container">
                     <h2 class="carousel-title">Featured Products</h2>

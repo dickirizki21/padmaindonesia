@@ -25,7 +25,7 @@
                                 </div><!-- End .entry-date -->
 
                                 <h2 class="entry-title">
-                                    <a href="single.html">Post Format - Image</a>
+                                    <a href="<?php echo base_url('detail') ?>">Post Format - Image</a>
                                 </h2>
 
                                 <div class="entry-content">
