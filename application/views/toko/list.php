@@ -1,6 +1,6 @@
 <main class="main">
         <div class="container" style="padding-bottom: 60px">
-            <center><h2 class="carousel-title" style="padding-top: 50px">BERIKUT ADALAH TOKO RESMI KAMI</h2></center>
+            <center><h2 class="carousel-title" style="padding-top: 50px">PADMA INDONESIA TERSEDIA DI BEBERAPA KOTA</h2></center>
 
         <div class="product-wrapper">
             <div class="col-8 col-md-4">

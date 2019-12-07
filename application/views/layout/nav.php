@@ -20,15 +20,15 @@
                                     <input type="search" class="form-control" name="q" id="q" placeholder="Search..." required>
                                     <div class="select-custom">
                                         <select id="cat" name="cat">
-                                            <option value="">All Categories</option>
-                                            <option value="4">Fashion</option>
-                                            <option value="12">- Women</option>
-                                            <option value="13">- Men</option>
-                                            <option value="66">- Jewellery</option>
-                                            <option value="67">- Kids Fashion</option>
-                                            <option value="5">Electronics</option>
-                                            <option value="21">- Smart TVs</option>
-                                            <option value="22">- Cameras</option>
+                                            <option value="">All Kategori</option>
+                                            <option value="4">Kategori 1</option>
+                                            <option value="12">- Kategori 2</option>
+                                            <option value="13">- Kategori 3</option>
+                                            <option value="66">- Kategori 4</option>
+                                            <option value="67">- Kategori 5</option>
+                                            <option value="5">Kategori 6</option>
+                                            <option value="21">- Kategori 7</option>
+                                            <option value="22">- Kategori 8</option>
                                         </select>
                                     </div><!-- End .select-custom -->
                                     <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
