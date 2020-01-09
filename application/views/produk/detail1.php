@@ -3,8 +3,7 @@
                 <div class="container">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>
-                        <li class="breadcrumb-item"><a href="product-full-width.html#">Electronics</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Headsets</li>
+                        <li class="breadcrumb-item"><a href="product-full-width.html#">Detail Produk</a></li>
                     </ol>
                 </div><!-- End .container -->
             </nav>
@@ -51,20 +50,20 @@
                             <div class="product-single-details">
                                 <h1 class="product-title">Silver Porto Headset</h1>
 
-                                <div class="price-box">
-                                    <span class="old-price">$81.00</span>
-                                    <span class="product-price">$101.00</span>
-                                </div><!-- End .price-box -->
-
                                 <div class="product-desc">
                                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
                                 </div><!-- End .product-desc -->
+
+                                <div class="product-desc">
+                                    <h4>Order Disini:</h4><img src="<?php echo base_url() ?>assets/padma-home/img/favicon.ico" alt="Post">
+                                </div><!-- End .product-desc -->
+                               
                             </div><!-- End .product-single-details -->
 
                             <div class="product-single-tabs">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="product-tab-desc" data-toggle="tab" href="product-full-width.html#product-desc-content" role="tab" aria-controls="product-desc-content" aria-selected="true">Description</a>
+                                        <a class="nav-link active" id="product-tab-desc" data-toggle="tab" href="product-full-width.html#product-desc-content" role="tab" aria-controls="product-desc-content" aria-selected="true">Diskripsi Produk</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
@@ -217,10 +216,6 @@
                                 <h2 class="product-title">
                                     <a href="product.html">USB Flash</a>
                                 </h2>
-                                <div class="price-box">
-                                    <span class="product-price">Rp.20.000</span>
-                                </div><!-- End .price-box -->
-
                                 <div class="product-action">
                                     
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
@@ -242,10 +237,6 @@
                                 <h2 class="product-title">
                                     <a href="product.html">USB Flash</a>
                                 </h2>
-                                <div class="price-box">
-                                    <span class="product-price">Rp.20.000</span>
-                                </div><!-- End .price-box -->
-
                                 <div class="product-action">
                                     
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
@@ -267,10 +258,6 @@
                                 <h2 class="product-title">
                                     <a href="product.html">USB Flash</a>
                                 </h2>
-                                <div class="price-box">
-                                    <span class="product-price">Rp.20.000</span>
-                                </div><!-- End .price-box -->
-
                                 <div class="product-action">
                                     
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
@@ -292,10 +279,6 @@
                                 <h2 class="product-title">
                                     <a href="product.html">USB Flash</a>
                                 </h2>
-                                <div class="price-box">
-                                    <span class="product-price">Rp.20.000</span>
-                                </div><!-- End .price-box -->
-
                                 <div class="product-action">
                                     
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">
@@ -317,10 +300,6 @@
                                 <h2 class="product-title">
                                     <a href="product.html">Rp.20.000</a>
                                 </h2>
-                                <div class="price-box">
-                                    <span class="product-price">Rp.20.000</span>
-                                </div><!-- End .price-box -->
-
                                 <div class="product-action">
                                     
                                     <a href="product.html" class="paction add-cart" title="Add to Cart">

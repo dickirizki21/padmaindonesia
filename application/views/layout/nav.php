@@ -67,6 +67,7 @@
                             </li>
                             <li class="active"><a href="<?php echo base_url('galeri') ?>">Galeri</a></li>
                             <li><a href="<?php echo base_url('berita') ?>">Berita</a></li>
+                            <li><a href="<?php echo base_url('berita') ?>">Artikel</a></li>
                             <li><a href="<?php echo base_url('toko') ?>">Toko Kami</a></li>
                             <li class="active"><a href="<?php echo base_url('kontak') ?>">Kontak Kami</a></li>
                         </ul>
