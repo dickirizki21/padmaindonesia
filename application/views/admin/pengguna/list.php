@@ -1,12 +1,9 @@
-      <header class="card-header">
-        <h2 class="card-title"><?php echo $title ?></h2>
-      </header>
       <div class="card-body">
         <p>
             <a href="<?php echo base_url('backend/pengguna/tambah')?>" class="btn btn-success btn-lg">
               <i class="fa fa-plus"></i> Tambah Pengguna</a>
         </p>
-        <table class="table table-bordered table-striped mb-0" id="datatable-tabletools">
+  <table id="example1" class="table table-bordered table-striped">
           <thead>
     <tr>
       <th>No</th>
@@ -34,6 +31,4 @@
       </div>
     </section>
   </div>
-</div>
-</section>
 

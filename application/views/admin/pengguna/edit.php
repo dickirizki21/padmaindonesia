@@ -7,12 +7,6 @@ echo form_open(base_url('backend/pengguna/edit/'.$pengguna->$id_pengguna));
 ?>
 <div data-collapsed="0" class="card">
 
-      <div class="card-header">
-        <div class="card-title">
-          <h2 class="card-title"><?php echo $title ?></h2>
-        </div>
-      </div>
-
       <div class="card-body">
 
         <div class="row">
@@ -37,25 +31,21 @@ echo form_open(base_url('backend/pengguna/edit/'.$pengguna->$id_pengguna));
             <input type="password" name="password" placeholder="Masukan Password" class="form-control" value="<?php echo set_value('password') ?>" required>
           </div>
 
-          <div class="col-lg-12">
-            <div class="form-group">
+          <div class="col-lg-12 col-md-3 form-group">
             <label> Hak Akses</label>
-             <select name="akses_level">
+             <select class="form-control" name="akses_level">
                 <option value="admin">Admin</option>
                 <option value="user" <?php if($pengguna->akses_level=="user") { echo "selected"; } ?>>User</option>
               </select>
-            </div>
           </div>
 
-          <div class="col-lg-12">
-            <div class="form-group">
+          <div class="col-lg-12 col-md-3 form-group">
               <button type="submit" class="mb-2 mt-2 mr-1 btn btn-success btn-md">
                 <i class="fa fa-save"> Simpan Data</i>
               </button>
               <button type="reset" class="mb-2 mt-2 mr-2 btn btn-danger btn-md">
                 <i class="fa fa-times"> Reset</i>
               </button>
-            </div>
           </div>
         </div>
 

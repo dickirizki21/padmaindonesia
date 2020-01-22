@@ -6,17 +6,8 @@ echo validation_errors('<div class="alert alert-warning">','</div>');
 echo form_open(base_url('backend/pengguna/tambah'));
 ?>
 
-
 		<div data-collapsed="0" class="card">
-
-			<div class="card-header">
-				<div class="card-title">
-					<h2 class="card-title"><?php echo $title ?></h2>
-				</div>
-			</div>
-
 			<div class="card-body">
-
 				<div class="row">
 
 					<div class="col-lg-6 col-md-3 form-group">
@@ -39,14 +30,13 @@ echo form_open(base_url('backend/pengguna/tambah'));
 						<input type="password" name="password" placeholder="Masukan Password" class="form-control" value="<?php echo set_value('password') ?>" required>
 					</div>
 
-					<div class="col-lg-12">
-						<div class="form-group">
-						<label> Hak Akses</label>
-							<select name="akses_level" data-plugin-selectTwo class="form-control populate placeholder" data-plugin-options='{ "placeholder": "--Pilih--", "allowClear": true }'>
+					<div class="col-lg-12 col-md-12 form-group">
+						<label> Hak Akses </label>
+							<select name="akses_level" class="select2">
+								<option value="" hidden not selected>--PILIH HAK AKSES--</option>
 								<option value="admin">Admin</option>
 								<option value="user">User</option>
 							</select>
-						</div>
 					</div>
 
 					<div class="col-lg-12">

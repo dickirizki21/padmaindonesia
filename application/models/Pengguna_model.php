@@ -21,10 +21,12 @@ class Pengguna_model extends CI_Model {
 			return $query->result();
 		}
 
+		// detail pengguna
 		public function listingin()
 		{
 			$this->db->select('*');
 			$this->db->from('tbl_pengguna');
+			// where
 			$this->db->order_by('id_pengguna', 'desc');
 			$query = $this->db->get();
 			return $query->row();

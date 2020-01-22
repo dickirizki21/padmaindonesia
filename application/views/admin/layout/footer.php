@@ -230,7 +230,14 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url() ?>assets/admin/dist/js/demo.js"></script>
 <!-- page script -->
+<!-- Select2 -->
+<script src="<?php echo base_url() ?>assets/admin/bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- ChartJS -->
+<script src="<?php echo base_url() ?>assets/admin/bower_components/chart.js/Chart.js"></script>
 <script>
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
   $(function () {
     $('#example1').DataTable()
     $('#example2').DataTable({
