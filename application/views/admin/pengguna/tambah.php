@@ -32,7 +32,7 @@ echo form_open(base_url('backend/pengguna/tambah'));
 
 					<div class="col-lg-12 col-md-12 form-group">
 						<label> Hak Akses </label>
-							<select name="akses_level" class="select2">
+							<select name="akses_level" class="form-control">
 								<option value="" hidden not selected>--PILIH HAK AKSES--</option>
 								<option value="admin">Admin</option>
 								<option value="user">User</option>

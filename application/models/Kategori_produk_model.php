@@ -1,9 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Toko_kami_model extends CI_Model {
+class Kategori_produk_model extends CI_Model {
 
-	// load database
 	public function __construct()
 	{
 		parent::__construct();
@@ -11,22 +10,22 @@ class Toko_kami_model extends CI_Model {
 		$this->load->database();
 	}
 
-	// listing data cabang toko
+		// listing data cabang toko
 		public function listing($id = null)
 		{
 			if ($id !== null) {
 				$this->db->select('*');
-				$this->db->from('tbl_toko_kami');
-				$this->db->where('id_toko', $id);
-				$this->db->order_by('id_toko', 'desc');
+				$this->db->from('tbl_kategori_produk');
+				$this->db->where('id_kategori_produk', $id);
+				$this->db->order_by('id_kategori_produk', 'desc');
 				$query = $this->db->get();
 				return $query->row();
 				
 			}else{
 
 				$this->db->select('*');
-				$this->db->from('tbl_toko_kami');
-				$this->db->order_by('id_toko', 'desc');
+				$this->db->from('tbl_kategori_produk');
+				$this->db->order_by('id_kategori_produk', 'desc');
 				$query = $this->db->get();
 				return $query->result();
 			}
@@ -36,7 +35,7 @@ class Toko_kami_model extends CI_Model {
 		public function detail()
 		{
 			$this->db->select('*');
-			$this->db->from('tbl_toko_kami');
+			$this->db->from('tbl_kategori_produk');
 			//where
 			$this->db->order_by('id_toko', 'desc');
 			$query = $this->db->get();
@@ -46,26 +45,26 @@ class Toko_kami_model extends CI_Model {
 		// insert/tambah user
 		public function tambah($data)
 		{
-			$this->db->insert('tbl_toko_kami', $data);
+			$this->db->insert('tbl_kategori_produk', $data);
 		}
 
 		// update user
 		public function edit($data)
 		{
-			$this->db->where('id_toko', $data['id_toko']);
-			$this->db->update('tbl_toko_kami', $data);
+			$this->db->where('id_kategori_produk', $data['id_kategori_produk']);
+			$this->db->update('tbl_kategori_produk', $data);
 		}
 
 		// delete user
 		public function delete($data)
 		{
-			$this->db->where('id_toko', $data['id_toko']);
-			$this->db->delete('tbl_toko_kami', $data);
+			$this->db->where('id_kategori_produk', $data['id_kategori_produk']);
+			$this->db->delete('tbl_kategori_produk', $data);
 		}
 		
-
+	
 
 }
 
-/* End of file Toko_kami_model.php */
-/* Location: ./application/models/Toko_kami_model.php */
+/* End of file Kategori_produk_model.php */
+/* Location: ./application/models/Kategori_produk_model.php */

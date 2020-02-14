@@ -2,22 +2,23 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Toko_kami extends CI_Controller {
-
 	
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->model('pengguna_model');
 		$this->load->model('toko_kami_model');
+		$this->load->model('kategori_produk');
 	}
 
-	// index karyawan
 	public function index()
 	{
 		$toko_kami 		= 	$this->toko_kami_model->listing();
 		$data_toko_kami =	count($toko_kami);
 		$pengguna 		= 	$this->pengguna_model->listing();
 		$data_pengguna	= 	count($pengguna);
+		$kategori_produk = 	$this->kategori_produk_model->listing();
+		$data_kategori_produk =	count($kategori_produk);
 
 		$data = array(	'title'				=>	'Cabang Outlet ('.count($toko_kami).')',
 						'toko_kami'			=>	$toko_kami,
@@ -31,10 +32,12 @@ class Toko_kami extends CI_Controller {
 	// Tambah Barang
 	public function tambah()
 	{
-		$toko_kami 		= 	$this->toko_kami_model->detail();
+		$toko_kami 		= 	$this->toko_kami_model->listing();
 		$data_toko_kami =	count($toko_kami);
 		$pengguna 		= 	$this->pengguna_model->listing();
 		$data_pengguna	= 	count($pengguna);
+		$kategori_produk = 	$this->kategori_produk_model->listing();
+		$data_kategori_produk =	count($kategori_produk);
 
 		//validasi input
 		$valid = $this->form_validation;

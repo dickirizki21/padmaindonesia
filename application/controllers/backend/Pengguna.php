@@ -7,12 +7,14 @@ class Pengguna extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('pengguna_model');
+		$this->load->model('toko_kami_model');
 	}
 
 	// Index Pengguna
 	public function index()
 	{
 		$pengguna 		=	$this->pengguna_model->listing();
+		$toko_kami 		= 	$this->toko_kami_model->listing();
 
 		$data = array(	'title'				=>	'Data Pengguna ('.count($pengguna).')',
 						'pengguna'			=>	$pengguna,

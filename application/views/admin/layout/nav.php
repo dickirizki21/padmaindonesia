@@ -20,8 +20,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Tambah Produk</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Tambah Kategori Produk</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Tambah Produk</a></li>
+            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori Produk</a></li>
           </ul>
         </li>
         <li class="treeview">
