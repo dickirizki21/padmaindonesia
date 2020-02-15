@@ -3,7 +3,7 @@
 echo validation_errors('<div class="alert alert-warning">','</div>');
 
 // form open
-echo form_open(base_url('backend/kategori_produk/edit/'.$kategori_produk->$id_kategori_produk));
+echo form_open(base_url('backend/kategori_artikel/edit/'.$kategori_artikel->$id_kategori_artikel));
 ?>
 <div data-collapsed="0" class="card">
 
@@ -13,13 +13,13 @@ echo form_open(base_url('backend/kategori_produk/edit/'.$kategori_produk->$id_ka
 
           <div class="col-lg-12 col-md-6 col-xs-3 form-group">
             <div class="col-lg-6 col-md-4 col-xs-3 form-group">
-              <label> Kategori Produk </label>
-              <input type="text" name="nama_kategori_produk" placeholder="ex. Mesin/Baju/Celana" class="form-control" value="<?php echo $kategori_produk->nama_kategori_produk ?>" required>
+              <label> Kategori Artikel </label>
+              <input type="text" name="nama_kategori_artikel" placeholder="ex. saran/tips/lainnya" class="form-control" value="<?php echo $kategori_artikel->nama_kategori_artikel ?>" required>
             </div>
 
             <div class="col-lg-6 col-md-4 col-xs-3 form-group">
               <label> Urutan</label>
-              <input type="text" name="urutan_kp" placeholder="1-10" class="form-control" value="<?php echo $kategori_produk->urutan_kp ?>" required>
+              <input type="text" name="urutan_ka" placeholder="1-10" class="form-control" value="<?php echo $kategori_artikel->urutan_ka ?>" required>
             </div>
 
           </div>

@@ -34,7 +34,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Artikel</a></li>
-            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Tambah Kategori Artikel</a></li>
+            <li><a href="<?php echo base_url('backend/kategori_artikel') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori Artikel</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -47,7 +47,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Berita</a></li>
-            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Tambah Kategori Berita</a></li>
+            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori Berita</a></li>
           </ul>
         </li>
         <li>

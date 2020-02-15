@@ -8,7 +8,7 @@ class Toko_kami extends CI_Controller {
 		parent::__construct();
 		$this->load->model('pengguna_model');
 		$this->load->model('toko_kami_model');
-		$this->load->model('kategori_produk');
+		$this->load->model('kategori_produk_model');
 	}
 
 	public function index()

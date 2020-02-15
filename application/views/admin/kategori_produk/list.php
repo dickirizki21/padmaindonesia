@@ -8,14 +8,18 @@
     <tr>
       <th>No</th>
       <th>Kategori</th>
-      <th>ACTION</th>
+      <th>Slug Kategori</th>
+      <th>Urutan</th>
+      <th>Action</th>
     </tr>
     </thead>
     <tbody>
 <?php $i = 1; foreach($kategori_produk as $kategori_produk) { ?>
     <tr>
-      <td><?php echo $i ?></td>
+      <td><?php echo $i ?>-<?php echo date_format(new DateTime($kategori_produk->tanggal_kp), 'd-m-Y') ?> </td>
       <td><?php echo $kategori_produk->nama_kategori_produk ?></td>
+      <td><?php echo $kategori_produk->slug_kategori_produk ?></td>
+      <td><?php echo $kategori_produk->urutan_kp ?></td>
       <td width="150px">
         
         <a href="<?php echo base_url('backend/kategori_produk/edit/'.$kategori_produk->id_kategori_produk) ?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i></a>

@@ -9,6 +9,7 @@ class Kategori_produk extends CI_Controller {
 		$this->load->model('pengguna_model');
 		$this->load->model('toko_kami_model');
 		$this->load->model('kategori_produk_model');
+		$this->load->model('kategori_artikel_model');
 	}
 
 	public function index()
@@ -18,12 +19,12 @@ class Kategori_produk extends CI_Controller {
 		$pengguna 		= 	$this->pengguna_model->listing();
 		$data_pengguna	= 	count($pengguna);
 		$kategori_produk = 	$this->kategori_produk_model->listing();
-		print_r($kategori_produk);
-		die;
 		$data_kategori_produk =	count($kategori_produk);
 
 		$data = array(	'title'				=>	'Kategori Produk ('.count($kategori_produk).')',
 						'kategori_produk'	=>	$kategori_produk,
+						'data_toko_kami'	=>	$data_toko_kami,
+						'data_pengguna'		=> 	$data_pengguna,
 						'isi'				=>	'admin/kategori_produk/list'
 					);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
@@ -42,22 +43,34 @@ class Kategori_produk extends CI_Controller {
 		//validasi input
 		$valid = $this->form_validation;
 
-		$valid->set_rules('nama_kategori_produk','Kategori Produk','required',
-			array(	'required'	=>	'%s Harus Diisi'));
+		$valid->set_rules('nama_kategori_produk','Kategori Produk','required|is_unique[tbl_kategori_produk.nama_kategori_produk]',
+			array(	'required'	=>	'%s Harus Diisi',
+					'is_unique' =>	'%s sudah ada. Buat Nama Kategori baru!'));
+		$valid->set_rules('urutan_kp','Urutan Kategori Produk','required|is_unique[tbl_kategori_produk.urutan_kp]',
+			array(	'required'	=>	'%s Harus Diisi',
+					'is_unique' =>	'%s sudah ada. Tambahkan Urutan Lain!'));
 
 		if($valid->run()=== FALSE){
 			//end validasi
 
 		$data = array(	'title'				=>	'Tambah Kategori Produk',
 						'kategori_produk'	=>	$kategori_produk,
+						'data_toko_kami'	=>	$data_toko_kami,
+						'data_pengguna'		=> 	$data_pengguna,
 						'isi'				=>	'admin/kategori_produk/tambah'
 					);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);
 		// START MASUK DATABASE
 		}else{
 			$i = $this->input;
-			$data = array(	'id_kategori_produk'		=>	$i->post('id_kategori_produk'),
-							'nama_kategori_produk'		=>	$i->post('nama_kategori_produk'),
+			// ambil slug kategori
+			$slug = url_title($i->post('nama_kategori_produk'),'dash',TRUE);
+			$data = array(	'id_kategori_produk'	=>	$i->post('id_kategori_produk'),
+							'id_pengguna'			=>	'1',
+							'slug_kategori_produk'	=>	$slug,
+							'nama_kategori_produk'	=>	$i->post('nama_kategori_produk'),
+							'urutan_kp'				=>	$i->post('urutan_kp'),
+							'tanggal_kp'			=>	date('Y-m-d H:i:s')
 							);
 			$this->kategori_produk_model->tambah($data);
 			$this->session->set_flashdata('sukses', 'Kategori Produk Berhasil Di Tambahkan');
@@ -74,14 +87,16 @@ class Kategori_produk extends CI_Controller {
 		$data_toko_kami =	count($toko_kami);
 		$pengguna 		= 	$this->pengguna_model->listing();
 		$data_pengguna	= 	count($pengguna);
-		$kategori_produk = 	$this->kategori_produk_model->listing();
+		$kategori_produk = 	$this->kategori_produk_model->listing($id_kategori_produk);
 		$data_kategori_produk =	count($kategori_produk);
-
 
 		//validaasi input
 		$valid = $this->form_validation;
 
-		$valid->set_rules('nama_kategori_produk','Nama Kategori Produk','required',
+		$valid->set_rules('nama_kategori_produk','Kategori Produk','required',
+			array(	'required'	=>	'%s Harus Diisi'));
+
+		$valid->set_rules('urutan_kp','Urutan Kategori Produk','required',
 			array(	'required'	=>	'%s Harus Diisi'));
 
 		if($valid->run()=== FALSE){
@@ -98,8 +113,14 @@ class Kategori_produk extends CI_Controller {
 		//start masuk ddatabase
 		}else{
 			$i = $this->input;
+			// ambil slug kategori
+			$slug = url_title($i->post('nama_kategori_produk'),'dash',TRUE);
 			$data = array(	'id_kategori_produk'	=>	$id_kategori_produk,
-							'nama_kategori_produk'	=>	$i->post('nama_kategori_produk')
+							'id_pengguna'			=>	'1',
+							'slug_kategori_produk'	=>	$slug,
+							'nama_kategori_produk'	=>	$i->post('nama_kategori_produk'),
+							'urutan_kp'				=>	$i->post('urutan_kp'),
+							'tanggal_kp'			=>	date('Y-m-d H:i:s')
 						);
 			$this->kategori_produk_model->edit($data);
 			$this->session->set_flashdata('sukses', 'Kategori Produk Berhasil Diedit');

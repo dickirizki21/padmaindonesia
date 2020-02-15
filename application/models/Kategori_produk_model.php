@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Kategori_produk_model extends CI_Model {
 
+	// load database
 	public function __construct()
 	{
 		parent::__construct();
@@ -31,17 +32,7 @@ class Kategori_produk_model extends CI_Model {
 			}
 		}
 	
-	// detail data outlet
-		public function detail()
-		{
-			$this->db->select('*');
-			$this->db->from('tbl_kategori_produk');
-			//where
-			$this->db->order_by('id_toko', 'desc');
-			$query = $this->db->get();
-			return $query->row();
-		}
-
+		
 		// insert/tambah user
 		public function tambah($data)
 		{
