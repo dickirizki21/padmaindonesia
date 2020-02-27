@@ -66,7 +66,7 @@ class Kategori_produk extends CI_Controller {
 			// ambil slug kategori
 			$slug = url_title($i->post('nama_kategori_produk'),'dash',TRUE);
 			$data = array(	'id_kategori_produk'	=>	$i->post('id_kategori_produk'),
-							'id_pengguna'			=>	'1',
+							'id_pengguna'			=>	$this->session->userdata('id_pengguna'),
 							'slug_kategori_produk'	=>	$slug,
 							'nama_kategori_produk'	=>	$i->post('nama_kategori_produk'),
 							'urutan_kp'				=>	$i->post('urutan_kp'),
@@ -116,7 +116,7 @@ class Kategori_produk extends CI_Controller {
 			// ambil slug kategori
 			$slug = url_title($i->post('nama_kategori_produk'),'dash',TRUE);
 			$data = array(	'id_kategori_produk'	=>	$id_kategori_produk,
-							'id_pengguna'			=>	'1',
+							'id_pengguna'			=>	$this->session->userdata('id_pengguna'),
 							'slug_kategori_produk'	=>	$slug,
 							'nama_kategori_produk'	=>	$i->post('nama_kategori_produk'),
 							'urutan_kp'				=>	$i->post('urutan_kp'),
@@ -135,7 +135,7 @@ class Kategori_produk extends CI_Controller {
 	{
 
 		// proteksi user harus login dulu
-		// $this->simple_login->check_login();
+		$this->simple_login->check_login();
 
 		$data = array(	'id_kategori_produk'	=>	$id_kategori_produk);
 

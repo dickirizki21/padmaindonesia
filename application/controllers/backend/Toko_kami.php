@@ -124,7 +124,7 @@ class Toko_kami extends CI_Controller {
 	{
 
 		// proteksi user harus login dulu
-		// $this->simple_login->check_login();
+		$this->simple_login->check_login();
 
 		$data = array(	'id_toko'	=>	$id_toko);
 

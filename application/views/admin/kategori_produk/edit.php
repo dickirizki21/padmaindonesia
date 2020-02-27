@@ -26,7 +26,7 @@ echo form_open(base_url('backend/kategori_produk/edit/'.$kategori_produk->$id_ka
 
           <div class="col-lg-12 col-md-3 form-group" align="right">
               <button type="submit" class="mb-2 mt-2 mr-1 btn btn-success btn-md">
-                <i class="fa fa-save"> Simpan Data</i>
+                <i class="fa fa-save"> Edit Data</i>
               </button>
               <button type="reset" class="mb-2 mt-2 mr-2 btn btn-danger btn-md">
                 <i class="fa fa-times"> Reset</i>

@@ -5,12 +5,12 @@
   <table id="example1" class="table table-bordered table-striped">
     <thead>
       <tr>
-        <th>NO</th>
-        <th>KOTA</th>
-        <th>NAMA OUTLET</th>
-        <th>ALAMAT</th>
-        <th>URUTAN</th>
-        <th>ACTION</th>
+        <th>No</th>
+        <th>Kota</th>
+        <th>Nama Outlet</th>
+        <th>Alamat</th>
+        <th>Urutan</th>
+        <th>Action</th>
       </tr>
       </thead>
        <tbody>
@@ -24,9 +24,9 @@
                 <td>
            
 
-                  <a href="<?php echo base_url('backend/toko_kami/edit/'.$toko_kami->id_toko) ?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
+                  <a href="<?php echo base_url('backend/toko_kami/edit/'.$toko_kami->id_toko) ?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i></a>
 
-                  <a href="<?php echo base_url('backend/toko_kami/delete/'.$toko_kami->id_toko) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin Menghapus Data ini?')"><i class="fa fa-trash-o"></i> hapus</a>
+                  <a href="<?php echo base_url('backend/toko_kami/delete/'.$toko_kami->id_toko) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin Menghapus Data ini?')"><i class="fa fa-trash-o"></i></a>
 
                 </td>
               </tr>

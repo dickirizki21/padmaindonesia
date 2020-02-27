@@ -20,34 +20,21 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Tambah Produk</a></li>
-            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori Produk</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-newspaper-o"></i>
-            <span>Artikel</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Artikel</a></li>
-            <li><a href="<?php echo base_url('backend/kategori_artikel') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori Artikel</a></li>
+            <li><a href="<?php echo base_url('backend/produk') ?>"><i class="fa fa-circle-o"></i> Tambah</a></li>
+            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-book"></i>
-            <span>Berita</span>
+            <span>Artikel & Berita</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Tambah Berita</a></li>
-            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori Berita</a></li>
+            <li><a href="<?php echo base_url('backend/artikel') ?>"><i class="fa fa-circle-o"></i> Tambah </a></li>
+            <li><a href="<?php echo base_url('backend/kategori_artikel') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori</a></li>
           </ul>
         </li>
         <li>
@@ -60,7 +47,10 @@
             <i class="fa fa-institution"></i> <span>Cabang Toko</span>
           </a>
         </li>
-        
+        <li class="header">KONFIGURASI WEBSITE</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Halaman Utama</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Halaman Produk</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-blue"></i> <span>Logo Website</span></a></li>
     </section>
     <!-- /.sidebar -->
   </aside>

@@ -1,3 +1,9 @@
+<?php
+// tampilin data orang yang login
+$id_pengguna  = $this->session->userdata('id_pengguna');
+$user_login   = $this->pengguna_model->detail($id_pengguna);
+?>
+
 <header class="main-header">
     <!-- Logo -->
     <a href="../../index2.html" class="logo">
@@ -21,7 +27,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url() ?>assets/admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs"><?php echo ucfirst($this->session->userdata('nama_pengguna')); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -29,8 +35,8 @@
                 <img src="<?php echo base_url() ?>assets/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  <?php echo $user_login->nama_pengguna ?> - <?php echo $user_login->akses_level ?>
+                  <small>Bergabung Sejak <?php echo date('d-M-Y',strtotime($user_login->tanggal_pengguna)) ?></small>
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -39,7 +45,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo base_url('login/logout') ?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>

@@ -12,26 +12,28 @@ class Pengguna_model extends CI_Model {
 	}
 
 	// listing data pengguna
-		public function listing()
+		public function listing($id = null)
 		{
-			$this->db->select('*');
-			$this->db->from('tbl_pengguna');
-			$this->db->order_by('id_pengguna', 'desc');
-			$query = $this->db->get();
-			return $query->result();
+			if ($id !== null) {
+				$this->db->select('*');
+				$this->db->from('tbl_pengguna');
+				$this->db->where('id_pengguna', $id);
+				$this->db->where_not_in('username',"SuperAdmin");
+				$this->db->order_by('id_pengguna', 'desc');
+				$query = $this->db->get();
+				return $query->row();
+				
+			}else{
+				$this->db->select('*');
+				$this->db->from('tbl_pengguna');
+				$this->db->where_not_in('username',"SuperAdmin");
+				$this->db->order_by('id_pengguna', 'desc');
+				$query = $this->db->get();
+				return $query->result();
+			}
 		}
 
-		// detail pengguna
-		public function listingin()
-		{
-			$this->db->select('*');
-			$this->db->from('tbl_pengguna');
-			// where
-			$this->db->order_by('id_pengguna', 'desc');
-			$query = $this->db->get();
-			return $query->row();
-		}
-	
+		
 	// detail data user
 		public function detail($id_pengguna)
 		{
@@ -42,6 +44,32 @@ class Pengguna_model extends CI_Model {
 			$this->db->order_by('id_pengguna', 'desc');
 			$query = $this->db->get();
 			return $query->row();
+		}
+
+		// detail data user
+		public function cek_data($username,$password)
+		{
+			$this->db->select('*');
+			$this->db->from('tbl_pengguna');
+			//where
+			$this->db->where(array(	'username'	=>	$username,
+									'password'	=>	sha1($password)));
+			$this->db->order_by('id_pengguna', 'desc');
+			$query = $this->db->get();
+			return $query->row();
+		}
+
+		// Login User
+		public function login($username, $password)
+		{
+			$this->db->select('*');
+			$this->db->from('tbl_pengguna');
+			//where
+			$this->db->where(array(	'username'	=>	$username,
+									'password'	=>	sha1($password)));
+			$this->db->order_by('id_pengguna', 'desc');
+			$query = $this->db->get();
+			return $query->result();
 		}
 
 

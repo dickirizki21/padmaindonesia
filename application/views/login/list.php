@@ -37,13 +37,33 @@
   <div class="login-box-body">
     <p class="login-box-msg">Masukan Username & Password</p>
 
-    <form action="<?php echo base_url() ?>assets/admin/index2.html" method="post">
+<?php
+      // notifikasi gagal login
+      if ($this->session->flashdata('gagal')) {
+      # code...
+      echo '<p class="alert alert-warning">';
+      echo $this->session->flashdata('gagal');
+      echo '</p>';
+      }
+
+      // notifikasi suskes logout
+      if ($this->session->flashdata('sukses')) {
+      # code...
+      echo '<p class="alert alert-success">';
+      echo $this->session->flashdata('sukses');
+      echo '</p>';
+      }
+
+      // form open
+echo form_open(base_url('login'));
+?>
+
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Username">
+        <input name="username" type="text" class="form-control" placeholder="Username">
         <span class="fa fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input name="password" type="password" class="form-control" placeholder="Password">
         <span class="fa fa-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -60,9 +80,10 @@
         </div>
         <!-- /.col -->
       </div>
-    </form>
 
-    <a href="#">I forgot my password</a><br>
+<?php echo form_close(); ?>
+
+    <a href="#">Lupa Password</a><br>
   </div>
   <!-- /.login-box-body -->
 </div>
