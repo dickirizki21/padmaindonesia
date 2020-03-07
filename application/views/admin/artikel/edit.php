@@ -55,7 +55,7 @@ echo form_open_multipart(base_url('backend/artikel/edit/'.$artikel->$id_artikel)
 <div class="col-md-4">
 	<div class="form-group form-group-lg">
 		<label>Gambar</label>
-		<input type="file" name="gambar" class="form-control" required>
+		<input type="file" name="gambar" class="form-control">
 	</div>
 </div>
 

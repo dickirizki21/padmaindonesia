@@ -13,7 +13,7 @@
     </tr>
     </thead>
     <tbody>
-<?php $i = 1; foreach($pengguna as $pengguna) { ?>
+    <?php $i = 1; foreach($pengguna as $pengguna) { ?>
     <tr>
       <td><?php echo $i  ?>-<?php echo date_format(new DateTime($pengguna->tanggal_pengguna), 'd-m-Y') ?></td>
       <td><?php echo $pengguna->username ?> - <b><?php echo $pengguna->akses_level ?></b></td>
@@ -25,8 +25,8 @@
         <a href="<?php echo base_url('backend/pengguna/delete/'.$pengguna->id_pengguna) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin Menghapus Data ini?')"><i class="fa fa-trash"></i></a>
       </td>
     </tr>
+  <?php $i++; } ?>
   </tbody>
-<?php $i++; } ?>
         </table>
       </div>
     </section>

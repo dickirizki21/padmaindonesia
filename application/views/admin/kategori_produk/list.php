@@ -27,8 +27,8 @@
         <a href="<?php echo base_url('backend/kategori_produk/delete/'.$kategori_produk->id_kategori_produk) ?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin Menghapus Data ini?')"><i class="fa fa-trash"></i></a>
       </td>
     </tr>
-  </tbody>
 <?php $i++; } ?>
+  </tbody>
         </table>
       </div>
     </section>

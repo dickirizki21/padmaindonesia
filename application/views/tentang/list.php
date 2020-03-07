@@ -19,18 +19,13 @@
             <div class="about-section">
                 <div class="container">
                     <h2 class="subtitle">Sejarah</h2>
-                    <p>Padma Indonesia berdiri pada tahun xxxx. Perusahaan Padma Indonesia memiliki badan hukum perseorangan terbatas atau PT. Padma Indonesia berada di daerah Karawang Bekasi (alamat lebih tepatnya di Maps).</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p align="justify"><?php echo $konfigurasi->sejarah_perusahaan ?></p>
 
-                    <h2 class="subtitle">Visi</h2>
-                    <p class="lead">“ Memiliki 10 cabang di Indonesia tahun 2024”</p>
+                    <h2 class="subtitle" align="center">Visi</h2>
+                    <p class="lead">“ <?php echo $konfigurasi->visi ?> ”</p>
 
-                    <h2 class="subtitle">Misi</h2>
-                    <div style="padding-left: 20px">
-                    <li> Menyediakan jasa printing </li>
-                    <li> melayani pelanggan dengan ramah </li>
-                    <li> menghasilkan produk yang berkualitas </li>
-                    </div>
+                    <h2 class="subtitle" align="center">Misi</h2>
+                    <p><?php echo $konfigurasi->misi ?></p>
                 </div><!-- End .container -->
             </div><!-- End .about-section -->
 

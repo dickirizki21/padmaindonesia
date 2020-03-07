@@ -12,7 +12,7 @@
         <!-- Maps -->
         
     <div class="col-md-12">        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8164751783356!2d107.03199231427304!3d-6.287837995449056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698e247a6cac9d%3A0xd6a12bae61967602!2sPT%20Cahaya%20Indorahmat%20Pratamajaya!5e0!3m2!1sen!2sid!4v1574608170830!5m2!1sen!2sid" width="100%" height="450" frameborder="1" style="border:0" allowfullscreen></iframe>
+       <?php echo $konfigurasi->maps ?>
     <!-- End #map -->
     </div>
 
@@ -47,25 +47,37 @@
                 </form>
             </div><!-- End .col-md-8 -->
 
-            <div class="col-md-4" style="padding-top: 30px">
+            <div class="col-md-2" style="padding-top: 30px">
                 <h2 class="light-title">Kontak <strong>Kami</strong></h2>
 
                 <div class="contact-info">
                     <div>
-                        <i class="icon-phone"></i>
-                        <p style="padding-top: 10px"><a href="tel:">0201 203 2032</a></p>
-                    </div>
-                    <div>
                         <i class="icon-facebook"></i>
-                        <p style="padding-top: 10px"><a href="tel:">porto_fb</a></p>
-                    </div>
-                    <div>
-                        <i class="icon-mail-alt"></i>
-                        <p style="padding-top: 10px"><a href="mailto:#">porto@gmail.com</a></p>
+                        <p style="padding-top: 10px"><a href="<?php echo $konfigurasi->facebook ?>:" target="_blank">Padma Indonesia</a></p>
                     </div>
                     <div>
                         <i class="icon-instagram"></i>
-                        <p style="padding-top: 10px">porto_skype</p>
+                         <p style="padding-top: 10px"><a href="<?php echo $konfigurasi->instagram ?>:" target="_blank">Padma Indonesia</a></p>
+                    </div>
+                    <div>
+                        <i class="icon-mail-alt"></i>
+                        <p style="padding-top: 10px"><a href="mailto:info@padmaindonesia.co.id" target="_blank">info@padmaindonesia.co.id</a></p>
+                    </div>
+                </div><!-- End .contact-info -->
+            </div><!-- End .col-md-4 -->
+
+             <div class="col-md-2" style="padding-top: 30px">
+                <h2 class="light-title" style="visibility: hidden">Kontak <strong>Kami</strong></h2>
+
+                <div class="contact-info">
+                    <div>
+                        <i class="icon-twitter"></i>
+                        <p style="padding-top: 10px"><a href="<?php echo $konfigurasi->twitter ?>" target="_blank">Padma Indonesia</a></p>
+                    </div>
+                    
+                    <div>
+                        <i class="icon-phone"></i>
+                        <p style="padding-top: 10px"><a href="#"><?php echo $konfigurasi->tlp ?></a></p>
                     </div>
                 </div><!-- End .contact-info -->
             </div><!-- End .col-md-4 -->

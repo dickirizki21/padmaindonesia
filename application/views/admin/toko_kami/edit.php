@@ -3,7 +3,7 @@
 echo validation_errors('<div class="alert alert-warning">','</div>');
 
 // form open
-echo form_open(base_url('admin/suplier/edit/'.$toko_kami->$id_toko));
+echo form_open(base_url('backend/toko_kami/edit/'.$toko_kami->$id_toko));
 ?>
 
 <div class="col-md-5">

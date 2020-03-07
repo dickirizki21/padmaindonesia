@@ -3,10 +3,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Galeri extends CI_Controller {
 
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('konfigurasi_model');
+	}
+
 	// Halaman Utama Website - Galeripage
 	public function index()
 	{
+
+		$konfigurasi = $this->konfigurasi_model->listing();
+		
 		$data = array(	'title'	=>	'Galeri | Padma Indonesia',
+						'konfigurasi'	=> 	$konfigurasi,
 						'isi'	=>	'Galeri/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);

@@ -30,7 +30,7 @@
 
                 </td>
               </tr>
-            </tbody>
           <?php $i++; } ?>
+            </tbody>
       </table>
         <!-- /.box-body -->

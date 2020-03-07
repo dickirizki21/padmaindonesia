@@ -21,7 +21,6 @@ echo form_open_multipart(base_url('backend/produk/tambah'));
 
 <div class="col-md-4">
 	<div align="middle" class="form-group form-group-lg">
-		
 		<img height="170px" width="250px" src="<?php echo base_url('assets/images/artikel/2.png')?>" id="blah" src="#" />
 	</div>
 </div>

@@ -10,13 +10,13 @@
                                 <h4 class="widget-title">Kontak Kami</h4>
                                 <ul class="contact-info">
                                     <li>
-                                        <span class="contact-info-label">Alamat <b>:</b></span>123 Street Name, City, England
+                                        <span class="contact-info-label">Alamat <b>:</b></span><?php echo $konfigurasi->alamat ?>
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Telepon / Wa <b>:</b></span>Toll Free <a href="tel:">(123) 456-7890</a>
+                                        <span class="contact-info-label">Telepon / Wa <b>:</b></span><a href="https://wa.me/<?php echo $konfigurasi->tlp_wa ?>?text=Hallo%20admin%20padma%20indonesia%20bisa%20bantu%20saya?" target="_blank">+<?php echo $konfigurasi->tlp_wa ?></a>
                                     </li>
                                     <li>
-                                        <span class="contact-info-label">Email <b>:</b></span> <a href="mailto:mail@example.com">mail@example.com</a>
+                                        <span class="contact-info-label">Email <b>:</b></span> <a href="mailto:info@padmaindonesia.co.id" target="_blank"><?php echo $konfigurasi->email ?></a>
                                     </li>
                                     <li>
                                         <span class="contact-info-label">Waktu Buka <b>:</b></span>
@@ -24,9 +24,9 @@
                                     </li>
                                 </ul>
                                 <div class="social-icons">
-                                    <a href="<?php echo base_url('detail1') ?>" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
-                                    <a href="<?php echo base_url('detail1') ?>" class="social-icon" target="_blank"><i class="icon-phone"></i></a>
-                                    <a href="<?php echo base_url('detail1') ?>" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
+                                    <a href="<?php echo $konfigurasi->facebook ?>" class="social-icon" target="_blank"><i class="icon-facebook"></i></a>
+                                    <a href="<?php echo $konfigurasi->tlp ?>" class="social-icon" target="_blank"><i class="icon-phone"></i></a>
+                                    <a href="<?php echo $konfigurasi->instagram ?>" class="social-icon" target="_blank"><i class="icon-instagram"></i></a>
                                 </div><!-- End .social-icons -->
                             </div><!-- End .widget -->
                         </div><!-- End .col-lg-3 -->
@@ -61,18 +61,8 @@
                                         <h4 class="widget-title">Mengapa Pilih Padma Indonesia?</h4>
                                         
                                         <div class="row">
-                                            <div class="col-sm-6">
-                                                <ul class="links">
-                                                    <li><a>Kualitas Printing HD</a></li>
-                                                    <li><a>Proses Produksi Cepat</a></li>
-                                                    <li><a>Produk Reject 100% Uang Kembali</a></li>
-                                                </ul>
-                                            </div><!-- End .col-sm-6 -->
-                                            <div class="col-sm-6">
-                                                <ul class="links">
-                                                    <li><a>Pelayanan Terbaik</a></li>
-                                                    <li><a>Harga Terjangkau</a></li>
-                                                </ul>
+                                            <div class="col-sm-12">
+                                                <p align="justify"><?php echo $konfigurasi->kelebihan_perusahaan ?></p>
                                             </div><!-- End .col-sm-6 -->
                                         </div><!-- End .row -->
                                     </div><!-- End .widget -->

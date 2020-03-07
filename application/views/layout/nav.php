@@ -21,12 +21,12 @@
                                     <div class="select-custom">
                                         <select id="cat" name="cat">
                                             <option value="">All Kategori</option>
-                                            <option value="4">Kategori 1</option>
+                                            <option value="4">- Kategori 1</option>
                                             <option value="12">- Kategori 2</option>
                                             <option value="13">- Kategori 3</option>
                                             <option value="66">- Kategori 4</option>
                                             <option value="67">- Kategori 5</option>
-                                            <option value="5">Kategori 6</option>
+                                            <option value="5">- Kategori 6</option>
                                             <option value="21">- Kategori 7</option>
                                             <option value="22">- Kategori 8</option>
                                         </select>
@@ -42,8 +42,9 @@
                             <i class="icon-menu"></i>
                         </button>
                         <div class="header-contact">
-                            <span>Call us now</span>
-                            <a href="tel:#"><strong>+123 5678 890</strong></a>
+                            <span align="center">Tanya Ke Whatsapp</span>
+                            <a href="https://wa.me/<?php echo $konfigurasi->tlp_wa ?>?text=Hallo%20admin%20padma%20indonesia%20bisa%20bantu%20saya?" target="_blank">
+                            <strong>+<?php echo $konfigurasi->tlp_wa ?></strong></a>
                         </div><!-- End .header-contact -->
                     </div><!-- End .header-right -->
                 </div><!-- End .container -->

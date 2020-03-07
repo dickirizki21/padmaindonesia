@@ -48,7 +48,7 @@
           </a>
         </li>
         <li class="header">KONFIGURASI WEBSITE</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Halaman Utama</span></a></li>
+        <li><a href="<?php echo base_url('backend/konfigurasi') ?>"><i class="fa fa-circle-o text-red"></i> <span>Tentang Perusahaan</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Halaman Produk</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-blue"></i> <span>Logo Website</span></a></li>
     </section>

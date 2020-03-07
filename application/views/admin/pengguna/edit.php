@@ -28,7 +28,7 @@ echo form_open(base_url('backend/pengguna/edit/'.$pengguna->$id_pengguna));
 
           <div class="col-lg-6 col-md-3 form-group">
             <label> Password </label>
-            <input type="password" name="password" placeholder="Masukan Password" class="form-control" value="<?php echo set_value('password') ?>" required>
+            <input type="password" name="password" placeholder="Masukan Password" class="form-control" value="<?php echo set_value('password') ?>" >
           </div>
 
           <div class="col-lg-12 col-md-3 form-group">

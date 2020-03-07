@@ -42,12 +42,13 @@
 
                                 <div class="side-menu-body">
                                     <ul>
-                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-shirt"></i>Kategori 1</a></li>
-                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-computer"></i>Kategori 2</a></li>
-                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-gift"></i>Kategori 2</a></li>
-                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-couch"></i>Kategori 3</a></li>
-                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-computer"></i>Kategori 4</a></li>
-                                        <li><a href="<?php echo base_url('produk') ?>"><i class="icon-cat-sport"></i>Kategori 2</a></li>
+                                        <?php 
+                                            $i=0;
+                                            foreach ($kategori_produk as $kategori_produk) { 
+                                        if ($i < 6) {
+                                        ?> 
+                                            <li><a href="<?php echo base_url('produk') ?>"><i class="icon-right-dir"></i><?php echo  $kategori_produk->nama_kategori_produk ?></a></li>
+                                        <?php $i+=1; }} ?>
                                     </ul>
 
                                     <a href="index.html#" class="btn btn-block btn-primary">CEK <strong>SEKARANG!!!</strong></a>

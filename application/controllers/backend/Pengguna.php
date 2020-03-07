@@ -79,7 +79,7 @@ class Pengguna extends CI_Controller {
 		//validaasi input
 		$valid = $this->form_validation;
 
-		$valid->set_rules('password','PASSWORD','required',
+		$valid->set_rules('nama_pengguna','Nama Pengguna','required',
 			array(	'required'	=>	'%s Harus Diisi'));
 
 		if($valid->run()=== FALSE){

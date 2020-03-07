@@ -5,53 +5,16 @@
         <div class="container" style="padding-left: 120px">
             <div class="row">
                 
-                <div class="col-md-4">
+                <?php foreach ($toko_kami as $toko_kami) { ?>
+                <div class="col-md-4" style="margin-bottom: 30px;">
                     <div class="cat-box">
-                        <h4 style="color: #fc0341">KOTA TOKO DIDIRIKAN</h4>
-                        <h2>NAMA TOKO</h2>
-                        <p>Alamat lengkap sekali toko</p>
+                        <h2 align="center"><?php echo $toko_kami->nama_toko ?></h2>
+                        <h5 align="center" style="color: #fc0341"><i class="icon-cat-default"></i><?php echo $toko_kami->lokasi_toko ?></h5>
+                        <p align="justify"><?php echo $toko_kami->alamat_toko ?></p>
                     </div><!-- End .cat-box -->
                 </div><!-- End .col-md-4 -->
-
-                <div class="col-md-4">
-                    <div class="cat-box">
-                        <h4 style="color: #fc0341">KOTA TOKO DIDIRIKAN</h4>
-                        <h2>NAMA TOKO</h2>
-                        <p>Alamat lengkap sekali toko</p>
-                    </div><!-- End .cat-box -->
-                </div><!-- End .col-md-4 -->
-
-                <div class="col-md-4">
-                    <div class="cat-box">
-                        <h4 style="color: #fc0341">KOTA TOKO DIDIRIKAN</h4>
-                        <h2>NAMA TOKO</h2>
-                        <p>Alamat lengkap sekali toko</p>
-                    </div><!-- End .cat-box -->
-                </div><!-- End .col-md-4 -->
-
-                <div class="col-md-4">
-                    <div class="cat-box">
-                        <h4 style="color: #fc0341; padding-top: 50px">KOTA TOKO DIDIRIKAN</h4>
-                        <h2>NAMA TOKO</h2>
-                        <p>Alamat lengkap sekali toko</p>
-                    </div><!-- End .cat-box -->
-                </div><!-- End .col-md-4 -->
-
-                <div class="col-md-4">
-                    <div class="cat-box">
-                        <h4 style="color: #fc0341; padding-top: 50px">KOTA TOKO DIDIRIKAN</h4>
-                        <h2>NAMA TOKO</h2>
-                        <p>Alamat lengkap sekali toko</p>
-                    </div><!-- End .cat-box -->
-                </div><!-- End .col-md-4 -->
-
-                <div class="col-md-4">
-                    <div class="cat-box">
-                        <h4 style="color: #fc0341; padding-top: 50px">KOTA TOKO DIDIRIKAN</h4>
-                        <h2>NAMA TOKO</h2>
-                        <p>Alamat lengkap sekali toko</p>
-                    </div><!-- End .cat-box -->
-                </div><!-- End .col-md-4 -->
+                <?php } ?>
+                
 
             </div><!-- End .row -->
         </div><!-- End .container -->

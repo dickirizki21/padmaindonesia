@@ -15,7 +15,7 @@
     </tr>
     </thead>
     <tbody>
-<?php $i = 1; foreach($artikel as $artikel) { ?>
+  <?php $i = 1; foreach($artikel as $artikel) { ?>
     <tr>
       <td><?php echo $i  ?>-<?php echo date_format(new DateTime($artikel->tanggal_post), 'd-m-Y') ?></td>
       <td>
@@ -36,6 +36,6 @@
         
       </td>
     </tr>
+  <?php $i++; } ?>
   </tbody>
-<?php $i++; } ?>
 </table>

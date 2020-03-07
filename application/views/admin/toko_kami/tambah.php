@@ -21,7 +21,7 @@ echo form_open(base_url('backend/toko_kami/tambah'));
 <div class="col-md-2">
     <div class="form-group">
       <label>Urutan</label>
-      <input type="text" name="urutan_toko"  class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan_toko') ?>" required>
+      <input type="text" name="urutan_toko"  class="form-control" placeholder="Urutan" value="<?php echo set_value('urutan_toko') ?>" >
     </div> 
 </div>
 
