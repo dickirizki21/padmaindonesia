@@ -86,8 +86,8 @@ class Artikel extends CI_Controller {
 				$config['create_thumb']= FALSE;
 				$config['maintain_ratio']= FALSE;
 				$config['quality']= '60%';
-				$config['width']= 700;
-				$config['height']= 550;
+				$config['width']= 1280;
+				$config['height']= 500;
 				$config['new_image']='./assets/images/artikel/'.$gambar['file_name'];
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();
@@ -171,8 +171,8 @@ class Artikel extends CI_Controller {
 				$config['create_thumb']= FALSE;
 				$config['maintain_ratio']= FALSE;
 				$config['quality']= '60%';
-				$config['width']= 700;
-				$config['height']= 550;
+				$config['width']= 1280;
+				$config['height']= 500;
 				$config['new_image']='./assets/images/artikel/'.$gambar['file_name'];
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();

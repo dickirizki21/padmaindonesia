@@ -20,8 +20,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('backend/produk') ?>"><i class="fa fa-circle-o"></i> Tambah</a></li>
-            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori</a></li>
+            <li><a href="<?php echo base_url('backend/produk') ?>"><i class="fa fa-circle-o"></i>Data Produk</a></li>
+            <li><a href="<?php echo base_url('backend/kategori_produk') ?>"><i class="fa fa-circle-o"></i>Kategori Produk</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -33,24 +33,39 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('backend/artikel') ?>"><i class="fa fa-circle-o"></i> Tambah </a></li>
-            <li><a href="<?php echo base_url('backend/kategori_artikel') ?>"><i class="fa fa-circle-o"></i> Tambah Kategori</a></li>
+            <li><a href="<?php echo base_url('backend/artikel') ?>"><i class="fa fa-circle-o"></i>Artikel & Berita </a></li>
+            <li><a href="<?php echo base_url('backend/kategori_artikel') ?>"><i class="fa fa-circle-o"></i>Kategori Artikel & Berita</a></li>
           </ul>
         </li>
-        <li>
-          <a href="<?php echo base_url('backend/pengguna') ?>">
-            <i class="fa fa-users"></i> <span>Pengguna</span>
-          </a>
-        </li>
+
         <li>
           <a href="<?php echo base_url('backend/toko_kami') ?>">
             <i class="fa fa-institution"></i> <span>Cabang Toko</span>
           </a>
         </li>
+
+        <li>
+          <a href="<?php echo base_url('backend/toko_kami') ?>">
+            <i class="fa fa-image"></i> <span>Galeri</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="<?php echo base_url('backend/toko_kami') ?>">
+            <i class="fa fa-envelope"></i> <span>Pesan</span>
+          </a>
+        </li>
+
+        <?php if ($this->session->userdata('akses_level') == "SuperAdmin") { ?>
+        <li>
+          <a href="<?php echo base_url('backend/pengguna') ?>">
+            <i class="fa fa-users"></i> <span>Pengguna</span>
+          </a>
+        </li>
+        <?php } ?>
         <li class="header">KONFIGURASI WEBSITE</li>
-        <li><a href="<?php echo base_url('backend/konfigurasi') ?>"><i class="fa fa-circle-o text-red"></i> <span>Tentang Perusahaan</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Halaman Produk</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-blue"></i> <span>Logo Website</span></a></li>
+        <li><a href="<?php echo base_url('backend/konfigurasi/index') ?>"><i class="fa fa-circle-o text-red"></i> <span>Data Perusahaan</span></a></li>
+        <li><a href="<?php echo base_url('backend/konfigurasi/gambar') ?>"><i class="fa fa-circle-o text-yellow"></i> <span>Gambar Website</span></a></li>
     </section>
     <!-- /.sidebar -->
   </aside>

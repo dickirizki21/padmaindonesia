@@ -25,7 +25,7 @@ echo form_open_multipart(base_url('backend/konfigurasi'));
           <!-- <label>Nama Perusahaan</label> -->
          <div class="alert alert-success alert-dismissible">
                 <h4 align="center"><i class="icon fa fa-info"></i>
-          Terakhir Di Update Oleh <?php echo $konfigurasi->nama_pengguna ?> Pada Tanggal <?php echo date('d-M-Y',strtotime($konfigurasi->tanggal_k)) ?></h4>
+          Terakhir Di Update Oleh <?php echo $konfigurasi->nama_pengguna ?> Pada Tanggal <?php echo date('d F Y',strtotime($konfigurasi->tanggal_k)) ?></h4>
          </div>
         </div>
     </div>

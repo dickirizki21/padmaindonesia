@@ -12,7 +12,7 @@ echo form_open(base_url('backend/kategori_artikel/tambah'));
 
 					<div class="col-lg-12 col-md-6 col-xs-3 form-group">
 						<div class="col-lg-6 col-md-4 col-xs-3 form-group">
-							<label> Kategori Artikel </label>
+							<label> Kategori</label>
 							<input type="text" name="nama_kategori_artikel" placeholder="ex. saran/tips/lainnya" class="form-control" value="<?php echo set_value('nama_kategori_artikel') ?>" required>
 						</div>
 

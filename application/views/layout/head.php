@@ -19,6 +19,9 @@
 
     <!-- Main CSS File -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/padma-home/demo-4/assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/assets/fontawesomefree/css/all.min.css">
+
 </head>
 <body>
     <div class="page-wrapper">

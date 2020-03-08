@@ -1,7 +1,7 @@
       <div class="card-body">
         <p>
             <a href="<?php echo base_url('backend/kategori_artikel/tambah')?>" class="btn btn-success btn-lg">
-              <i class="fa fa-plus"></i> Tambah Kategori Artikel</a>
+              <i class="fa fa-plus"></i> Tambah Kategori</a>
         </p>
   <table id="example1" class="table table-bordered table-striped">
           <thead>

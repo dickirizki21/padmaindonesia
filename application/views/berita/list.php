@@ -115,13 +115,13 @@
                             </div><!-- End .widget -->
 
                             <div class="widget widget-categories">
-                                <h4 class="widget-title">Blog Categories</h4>
+                                <h4 class="widget-title">Kategori Berita</h4>
 
-                                <ul class="list">
-                                    <li><a href="blog.html#">All about printing</a></li>
-                                    <li><a href="blog.html#">Tips &amp; Trick</a></li>
-                                    <li><a href="blog.html#">Berita Dunia</a></li>
-                                </ul>
+                                <?php foreach ($kategori_artikel as $kategori_artikel) { ?>
+                                    <ul class="list">
+                                        <li><a href="<?php echo $kategori_artikel->nama_kategori_artikel ?>"><?php echo $kategori_artikel->nama_kategori_artikel ?></a></li>
+                                    </ul>
+                                <?php } ?>
                             </div><!-- End .widget -->
 
                             <div class="widget">

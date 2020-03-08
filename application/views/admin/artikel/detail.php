@@ -31,7 +31,7 @@
         <tbody>
           <tr>
             <td>Ditulis Oleh</td>
-            <td>: <b><?php echo $artikel->nama_pengguna ?></b> - Pada Tanggal <?php echo date('d-M-Y',strtotime($artikel->tanggal_post)) ?></td>
+            <td>: <b><?php echo $artikel->nama_pengguna ?></b> - Pada Tanggal <?php echo date('d F Y',strtotime($artikel->tanggal_post)) ?></td>
           </tr>
           <tr>
             <td>Jenis</td>

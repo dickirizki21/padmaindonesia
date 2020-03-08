@@ -11,79 +11,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
+                    <?php foreach ($listingartikel as $listingartikel) { ?>
                         <article class="entry">
                             <div class="entry-media">
                                 <a href="single.html">
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/post-1.jpg" alt="Post">
+                                    <img src="<?php echo base_url('assets/images/artikel/'.$listingartikel->gambar) ?>" alt="Post">
                                 </a>
                             </div><!-- End .entry-media -->
 
                             <div class="entry-body">
                                 <div class="entry-date">
-                                    <span class="day">29</span>
-                                    <span class="month">Jun</span>
+                                    <span class="day"><?php echo date_format(new DateTime($listingartikel->tanggal_post), 'd') ?></span>
+                                    <span class="month"><?php echo date_format(new DateTime($listingartikel->tanggal_post), 'F') ?></span>
                                 </div><!-- End .entry-date -->
 
                                 <h2 class="entry-title">
-                                    <a href="<?php echo base_url('detailartikel') ?>">Post Format - Image</a>
+                                    <a href="<?php echo base_url('detailartikel') ?>"><?php echo $listingartikel->judul_artikel; ?></a>
                                 </h2>
 
                                 <div class="entry-content">
-                                    <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
-
+                                    <p><?php echo substr($listingartikel->isi_artikel,0,500)."....." ?></p>
                                     <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
                                 </div><!-- End .entry-content -->
 
                                 <div class="entry-meta">
-                                    <span><i class="icon-calendar"></i>June 29, 2018</span>
-                                    <span><i class="icon-user"></i>By <a href="blog.html#">Admin</a></span>
-                                    <span><i class="icon-folder-open"></i>
-                                        <a href="blog.html#">Haircuts & hairstyles</a>,
-                                        <a href="blog.html#">Fashion trends</a>,
-                                        <a href="blog.html#">Accessories</a>
+                                    <span><i class="icon-calendar"></i><?php echo date_format(new DateTime($listingartikel->tanggal_post), 'd F Y') ?></span>
+                                    <span><i class="icon-user"></i>Ditulis Oleh <?php echo $listingartikel->nama_pengguna ?></span>
+                                    <span><i class="fas fa-bullhorn"></i></i></i>
+                                        <a><?php echo $listingartikel->nama_kategori_artikel ?></a>
                                     </span>
                                 </div><!-- End .entry-meta -->
                             </div><!-- End .entry-body -->
-                        </article><!-- End .entry -->
-
-                        <article class="entry">
-                            <div class="entry-media">
-                                <a href="single.html">
-                                    <div class="entry-slider owl-carousel owl-theme owl-theme-light">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/post-1.jpg" alt="Post">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/post-2.jpg" alt="Post">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/post-3.jpg" alt="Post">
-                                    </div><!-- End .entry-slider -->
-                                </a>
-                            </div><!-- End .entry-media -->
-
-                            <div class="entry-body">
-                                <div class="entry-date">
-                                    <span class="day">22</span>
-                                    <span class="month">Jun</span>
-                                </div><!-- End .entry-date -->
-
-                                <h2 class="entry-title">
-                                    <a href="single.html">Post Format - Image Gallery</a>
-                                </h2>
-
-                                <div class="entry-content">
-                                    <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula.</p>
-
-                                    <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
-                                </div><!-- End .entry-content -->
-
-                                <div class="entry-meta">
-                                    <span><i class="icon-calendar"></i>June 22, 2018</span>
-                                    <span><i class="icon-user"></i>By <a href="blog.html#">Admin</a></span>
-                                    <span><i class="icon-folder-open"></i>
-                                        <a href="blog.html#">Haircuts & hairstyles</a>,
-                                        <a href="blog.html#">Fashion trends</a>,
-                                        <a href="blog.html#">Accessories</a>
-                                    </span>
-                                </div><!-- End .entry-meta -->
-                            </div><!-- End .entry-body -->
-                        </article><!-- End .entry -->
+                        </article><!-- End .entry -->            
+                    <?php } ?>
 
                         <nav class="toolbox toolbox-pagination">
                             <ul class="pagination">
@@ -117,11 +77,11 @@
                             <div class="widget widget-categories">
                                 <h4 class="widget-title">Blog Categories</h4>
 
+                                <?php foreach ($kategori_artikel as $kategori_artikel) { ?>
                                 <ul class="list">
-                                    <li><a href="blog.html#">All about printing</a></li>
-                                    <li><a href="blog.html#">Tips &amp; Trick</a></li>
-                                    <li><a href="blog.html#">Berita Dunia</a></li>
+                                    <li><a href="blog.html#"><?php echo $kategori_artikel->nama_kategori_artikel ?></a></li>
                                 </ul>
+                                <?php } ?>
                             </div><!-- End .widget -->
 
                             <div class="widget">

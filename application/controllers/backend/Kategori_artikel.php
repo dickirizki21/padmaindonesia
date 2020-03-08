@@ -23,7 +23,7 @@ class Kategori_artikel extends CI_Controller {
 		$kategori_artikel 		= 	$this->kategori_artikel_model->listing();
 		$data_kategori_artikel 	=	count($kategori_artikel);
 
-		$data = array(	'title'				=>	'Kategori artikel ('.count($kategori_artikel).')',
+		$data = array(	'title'				=>	'Kategori Artikel & Berita ('.count($kategori_artikel).')',
 						'kategori_artikel'	=>	$kategori_artikel,
 						'data_toko_kami'	=>	$data_toko_kami,
 						'data_pengguna'		=> 	$data_pengguna,
@@ -106,7 +106,7 @@ class Kategori_artikel extends CI_Controller {
 
 		if($valid->run()=== FALSE){
 			//end validaasi
-		$data = array(	'title'					=>	'Edit Kategori Produk',	
+		$data = array(	'title'					=>	'Edit Kategori',	
 						'id_kategori_artikel'	=>	'id_kategori_artikel',
 						'kategori_artikel'		=>	$kategori_artikel,	
 						'data_pengguna'			=>	$data_pengguna,
