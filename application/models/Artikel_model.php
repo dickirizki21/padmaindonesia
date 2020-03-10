@@ -60,6 +60,19 @@ class Artikel_model extends CI_Model {
 		return $query->result();
 	}
 
+	public function listingberita()
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		$this->db->join('tbl_kategori_artikel', 'tbl_artikel.id_kategori_artikel = tbl_kategori_artikel.id_kategori_artikel', 'LEFT');
+		$this->db->join('tbl_pengguna', 'tbl_artikel.id_pengguna = tbl_pengguna.id_pengguna', 'LEFT');
+		$this->db->where('jenis_artikel', "Berita");
+		$this->db->where('status_artikel', "Publish");
+		$this->db->order_by('id_artikel', 'desc');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 
 		// public function listing()
 		// {

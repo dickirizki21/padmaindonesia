@@ -8,19 +8,23 @@ class Berita extends CI_Controller {
 		parent::__construct();
 		$this->load->model('konfigurasi_model');
 		$this->load->model('kategori_artikel_model');
+		$this->load->model('artikel_model');
 	}
 
 	// Halaman Utama Website - Beritapage
 	public function index()
 	{
 		$kategori_artikel = $this->kategori_artikel_model->listing();
+		$listingberita = $this->artikel_model->listingberita();
+
 
 		$konfigurasi = $this->konfigurasi_model->listing();
 
-		$data = array(	'title'	=>	'Berita | Padma Indonesia',
-						'konfigurasi'	=> 	$konfigurasi,
+		$data = array(	'title'				=>	'Berita | Padma Indonesia',
+						'konfigurasi'		=> 	$konfigurasi,
+						'listingberita'		=> 	$listingberita,
 						'kategori_artikel'	=>	$kategori_artikel,
-						'isi'	=>	'Berita/list'
+						'isi'				=>	'Berita/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}

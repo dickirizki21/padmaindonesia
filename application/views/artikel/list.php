@@ -75,7 +75,7 @@
                             </div><!-- End .widget -->
 
                             <div class="widget widget-categories">
-                                <h4 class="widget-title">Blog Categories</h4>
+                                <h4 class="widget-title">Artikel Kategori</h4>
 
                                 <?php foreach ($kategori_artikel as $kategori_artikel) { ?>
                                 <ul class="list">
