@@ -31,6 +31,16 @@ class Kategori_artikel_model extends CI_Model {
 				return $query->result();
 			}
 		}
+
+		public function listingarsipartikel()
+		{
+			$this->db->select('*');
+			$this->db->from('tbl_kategori_artikel');
+			$this->db->order_by('tanggal_ka', 'desc');
+			$query = $this->db->get();
+			return $query->result();
+
+		}
 	
 		
 		// insert/tambah user

@@ -51,7 +51,7 @@
                                         <?php $i+=1; }} ?>
                                     </ul>
 
-                                    <a href="index.html#" class="btn btn-block btn-primary">CEK <strong>SEKARANG!!!</strong></a>
+                                    <a href="<?php echo base_url('produk') ?>" class="btn btn-block btn-primary">CEK <strong>SEKARANG!!!</strong></a>
                                 </div><!-- End .side-menu-body -->
                             </div><!-- End .side-custom-menu -->
                         </div><!-- End .col-lg-3 -->
@@ -157,313 +157,37 @@
             </div><!-- End .banners-group -->
 
             <div class="mb-4"></div><!-- margin -->
-<!-- LIST PRODUCT BARU -->
-            <div class="info-boxes-container">
-                <center><h2 style="padding-top: 50px; padding-bottom: 30px">---------------------------------------------------------------o Hot Sales Minggu Ini o---------------------------------------------------------------</h2></center>
-            </div><!-- End .info-boxes-container -->
-            <div class="banners-group">
-                <div class="container">
-                    <div class="row">
-                        <div class="product-wrapper">
-                    <div class="row row-sm category-grid">
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
-                                        
-                                    </a>
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">USB Flash</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
+        <!-- LIST PRODUCT BARU -->
+             <div class="banner banner-cat" 
+                style="background-image: url('<?=base_url()?>assets/padma-home/demo-4/assets/images/banners/banner-top.jpg');">
+                <!-- <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-top.jpg" alt=""> -->
+                <div class="banner-content container">
+                    <h2 class="banner-subtitle">Dapatkan<span> DISINI!!</span></h2>
+                    <h1 class="banner-title">
+                        Produk Unggulan
+                    </h1>
+                    <a href="<?php echo('produk') ?>" class="btn btn-dark">Belanja sekarang!</a>
+                </div><!-- End .banner-content -->
+            </div><!-- End .banner -->
 
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-sale">-20%</span>
-                                    <span class="product-label label-hot">New</span>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">Inline Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="old-price">Rp.20.000</span>
-                                        <span class="product-price">Rp.25.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
-                                    </a>
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">USB Flash</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-sale">-20%</span>
-                                    <span class="product-label label-hot">New</span>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">Inline Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="old-price">Rp.20.000</span>
-                                        <span class="product-price">Rp.25.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
-                                    </a>
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">USB Flash</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-sale">-20%</span>
-                                    <span class="product-label label-hot">New</span>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">Inline Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="old-price">Rp.20.000</span>
-                                        <span class="product-price">Rp.25.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
-                                    </a>
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">USB Flash</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-sale">-20%</span>
-                                    <span class="product-label label-hot">New</span>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">Inline Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="old-price">Rp.20.000</span>
-                                        <span class="product-price">Rp.25.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
-                                    </a>
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">USB Flash</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-sale">-20%</span>
-                                    <span class="product-label label-hot">New</span>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">Inline Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="old-price">Rp.20.000</span>
-                                        <span class="product-price">Rp.25.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-1.jpg" alt="product">
-                                    </a>
-                                    <a href="<?php echo base_url() ?>assets/padma-home/demo-4/ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">USB Flash</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="product-price">Rp.20.000</span>
-                                    </div><!-- End .price-box -->
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-8 col-md-4">
-                            <div class="grid-product">
-                                <figure class="product-image-container">
-                                    <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                                        <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/products/product-2.jpg" alt="product">
-                                    </a>
-                                    <a href="ajax/product-quick-view.html" class="btn-quickview">Quick View</a>
-                                    <span class="product-label label-sale">-20%</span>
-                                    <span class="product-label label-hot">New</span>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="ratings-container">
-                                        
-                                    </div><!-- End .product-container -->
-                                    <h2 class="product-title">
-                                        <a href="product.html">Inline Headset</a>
-                                    </h2>
-                                    <div class="price-box">
-                                        <span class="old-price">Rp.20.000</span>
-                                        <span class="product-price">Rp.25.000</span>
-                                    </div><!-- End .price-box -->
-
-                                    
-                                </div><!-- End .product-details -->
-                            </div><!-- End .product -->
-                        </div><!-- End .col-md-4 -->
-
-                    </div><!-- End .row -->
-                </div>
-                    </div>
-                </div>
+        <div class="container">
+             <div class="row row-sm mt-5">
+                <?php 
+                $i=0;
+                foreach ($produk as $produk) { 
+                if ($i<4) { ?>
+                    <div class="col-6 col-md-3">
+                        <div class="product">
+                            <div class="card">
+                                         <img src="<?php echo base_url('assets/images/produk/'.$produk->gambar_produk) ?>" alt="Image Produk">
+                                          <div class="card-body">
+                                            <h3 align="center" class="card-title"><?php echo substr($produk->nama_produk,0,20) ?></h3>
+                                            <p align="justify" class="card-text"><?php echo substr($produk->deskripsi,0,100)."....." ?></p>
+                                          </div>
+                            </div>
+                        </div><!-- End .product -->
+                    </div><!-- End .col-md-4 -->
+                <?php $i++; }} ?>
             </div>
-        </main><!-- End .main -->
+        </div>
+    </main><!-- End .main -->

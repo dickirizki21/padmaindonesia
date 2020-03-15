@@ -75,7 +75,7 @@
 
             <div class="container">
                 <div class="footer-bottom">
-                    <p class="footer-copyright">&copy; Padma Indonesia 2019</p>
+                    <p class="footer-copyright">&copy; Padma Indonesia <?php echo date('Y') ?></p>
                 </div><!-- End .footer-bottom -->
             </div><!-- End .container -->
         </footer><!-- End .footer -->
@@ -144,6 +144,11 @@
     </div><!-- End .newsletter-popup -->
 
     <a id="scroll-top" href="<?php echo base_url() ?>assets/padma-home/demo-4/index.html#top" title="Top" role="button"><i class="icon-angle-up"></i></a>
+
+    <!-- botstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Plugins JS File -->
     <script src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/js/jquery.min.js"></script>

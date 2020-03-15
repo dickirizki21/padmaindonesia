@@ -15,7 +15,7 @@
                         <article class="entry">
                             <div class="entry-media">
                                 <a href="single.html">
-                                    <img src="<?php echo base_url('assets/images/artikel/'.$listingartikel->gambar) ?>" alt="Post">
+                                    <img src="<?php echo base_url('assets/images/artikel/'.$listingartikel->gambar) ?>" alt="Artikel Image">
                                 </a>
                             </div><!-- End .entry-media -->
 
@@ -25,7 +25,7 @@
                                     <span class="month"><?php echo date_format(new DateTime($listingartikel->tanggal_post), 'F') ?></span>
                                 </div><!-- End .entry-date -->
 
-                                <h2 class="entry-title">
+                                <h2 class="entry-title"> 
                                     <a href="<?php echo base_url('detailartikel') ?>"><?php echo $listingartikel->judul_artikel; ?></a>
                                 </h2>
 
@@ -85,37 +85,26 @@
                             </div><!-- End .widget -->
 
                             <div class="widget">
-                                <h4 class="widget-title">Recent Posts</h4>
+                                <h4 class="widget-title">Post Terbaru</h4>
 
+                            <?php foreach ($listingartikelterbaru as $listingartikelterbaru) { ?>
                                 <ul class="simple-entry-list">
                                     <li>
                                         <div class="entry-media">
                                             <a href="single.html">
-                                                <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/widget/post-1.jpg" alt="Post">
-                                            </a>
-                                        </div><!-- End .entry-media -->
-                                        <div class="entry-info">
-                                            <a href="single.html">Post Format - Video</a>
-                                            <div class="entry-meta">
-                                                April 08, 2018
-                                            </div><!-- End .entry-meta -->
-                                        </div><!-- End .entry-info -->
-                                    </li>
+                                                <img style="height: 50px;die;" src="<?php echo base_url('assets/images/artikel/'.$listingartikelterbaru->gambar) ?>" alt="Post">
 
-                                    <li>
-                                        <div class="entry-media">
-                                            <a href="single.html">
-                                                <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/widget/post-2.jpg" alt="Post">
                                             </a>
                                         </div><!-- End .entry-media -->
                                         <div class="entry-info">
-                                            <a href="single.html">Post Format - Image</a>
+                                            <a href="single.html"><?php echo substr($listingartikelterbaru->judul_artikel,0,15)."..." ?></a>
                                             <div class="entry-meta">
-                                                March 23, 2016
+                                                <?php echo date_format(new DateTime($listingartikelterbaru->tanggal_post), 'd F Y') ?>
                                             </div><!-- End .entry-meta -->
                                         </div><!-- End .entry-info -->
                                     </li>
                                 </ul>
+                            <?php } ?>
                             </div><!-- End .widget -->
 
                             <div class="widget">
@@ -134,9 +123,9 @@
                                 <h4 class="widget-title">Archive</h4>
 
                                 <ul class="list">
-                                    <li><a href="blog.html#">April 2018</a></li>
-                                    <li><a href="blog.html#">March 2018</a></li>
-                                    <li><a href="blog.html#">February 2018</a></li>
+                                    <?php foreach($listingarsipartikel as $listingarsipartikel) { ?>
+                                        <li><a href="blog.html#"><?php echo date_format(new DateTime($listingarsipartikel->tanggal_ka), 'F Y') ?></a></li>
+                                    <?php } ?>
                                 </ul>
                             </div><!-- End .widget -->
 

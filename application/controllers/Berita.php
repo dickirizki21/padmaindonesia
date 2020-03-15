@@ -9,6 +9,7 @@ class Berita extends CI_Controller {
 		$this->load->model('konfigurasi_model');
 		$this->load->model('kategori_artikel_model');
 		$this->load->model('artikel_model');
+		$this->load->model('kategori_produk_model');
 	}
 
 	// Halaman Utama Website - Beritapage
@@ -16,6 +17,8 @@ class Berita extends CI_Controller {
 	{
 		$kategori_artikel = $this->kategori_artikel_model->listing();
 		$listingberita = $this->artikel_model->listingberita();
+		$listingberitaterbaru = $this->artikel_model->listingberitaterbaru();
+		$kategori_produk = $this->kategori_produk_model->listing();
 
 
 		$konfigurasi = $this->konfigurasi_model->listing();
@@ -24,6 +27,8 @@ class Berita extends CI_Controller {
 						'konfigurasi'		=> 	$konfigurasi,
 						'listingberita'		=> 	$listingberita,
 						'kategori_artikel'	=>	$kategori_artikel,
+						'listingberita_terbaru'	=>	$listingberitaterbaru,
+						'kategori_produk'	=>	$kategori_produk,
 						'isi'				=>	'Berita/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);

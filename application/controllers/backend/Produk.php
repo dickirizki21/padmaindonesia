@@ -138,7 +138,6 @@ public function edit($id_produk)
 	$artikel 				= 	$this->artikel_model->listing();
 	$data_artikel 			= 	count($artikel);
 	$produk 				= 	$this->produk_model->listing($id_produk);
-	$data_produk 			= 	count($produk);
 
 		//validaasi input
 	$valid = $this->form_validation;
@@ -226,7 +225,6 @@ public function edit($id_produk)
 					'kategori_artikel'		=>	$kategori_artikel,
 					'kategori_produk'		=>	$kategori_produk,
 					'data_artikel'			=>	$data_artikel,
-					'data_produk'			=> 	$data_produk,
 					'data_kategori_artikel'	=>	$data_kategori_artikel,
 					'isi'					=>	'admin/produk/edit'
 	);

@@ -57,7 +57,7 @@ class Pengguna extends CI_Controller {
 							'email_pengguna'	=>	$i->post('email_pengguna'),
 							'username'			=>	$i->post('username'),
 							'password'			=>	sha1($i->post('password')),
-							'akses_level'		=>	'User',
+							'akses_level'		=>	"User",
 							'tanggal_pengguna'	=>	date('Y-m-d H:i:s')
 							);
 			$this->pengguna_model->tambah($data);
@@ -99,7 +99,7 @@ class Pengguna extends CI_Controller {
 							'email_pengguna'	=>	$i->post('email_pengguna'),
 							'username'			=>	$i->post('username'),
 							'password'			=>	sha1($i->post('password')),
-							'akses_level'		=>	$i->post('akses_level'),
+							'akses_level'		=>	"User",
 							'tanggal_pengguna'	=>	date('Y-m-d H:i:s')
 						);
 			$this->pengguna_model->edit($data);

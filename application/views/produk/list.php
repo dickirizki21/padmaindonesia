@@ -54,12 +54,12 @@
                     </div><!-- End .layout-modes -->
                 </nav>
 
-                <div class="row row-sm">
+            <div class="row row-sm">
+                <?php foreach ($produk as $produk) { ?>
                     <div class="col-6 col-md-4 col-xl-3">
                         <div class="product">
                             <figure class="product-image-container">
                                 <a href="<?php echo base_url('detail1') ?>" class="product-image">
-                            <?php foreach ($produk as $produk) { ?>
                                     <?php if($produk->gambar_produk=="") {echo 'Tidak Ada'; }else{ ?>
                                          <img src="<?php echo base_url('assets/images/produk/'.$produk->gambar_produk)?>" class="img img-thumbnail" width="100">
                                     <?php } ?>
@@ -76,11 +76,11 @@
                                         </a>
                                     </div><!-- End .product-action -->
                                 </div><!-- End .product-details -->
-                            <?php } ?>
                         </div><!-- End .product -->
                     </div><!-- End .col-xl-3 -->
+                <?php } ?>
                     
-                </div><!-- End .row -->
+            </div><!-- End .row -->
 
                 <nav class="toolbox toolbox-pagination">
                     <div class="toolbox-item toolbox-show">

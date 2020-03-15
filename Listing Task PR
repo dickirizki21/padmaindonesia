@@ -1,0 +1,38 @@
+List yang belom dikerjakan
+	Frontend
+		Beranda
+			Logo Padmaindonesia pojok kiri
+			search navbar
+			listing kategori di navbar
+			banner atas
+			banner promosi
+			listing hot produk
+		Produk
+			Link halaman diatas kategori
+			Sorting sebelah kategori
+			list kotak/urutan pojok kanan
+			pagination
+			detail produk
+		Galeri
+			Belom
+		Berita
+			Pencarian
+			Recent Post
+			arsip
+			detail berita
+			pagination
+		Artikel
+			Pencarian
+			Recent Post
+			arsip
+			detail berita
+			pagination
+BACKEND
+	Rapihin dashboard
+	Artikel
+		Rapihin halaman add sama edit 
+		edit data
+	Galeri
+	Pesan
+	Konfigurasi Gambar
+		

@@ -8,6 +8,7 @@ class Galeri extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('konfigurasi_model');
+		$this->load->model('kategori_produk_model');
 	}
 
 	// Halaman Utama Website - Galeripage
@@ -15,9 +16,11 @@ class Galeri extends CI_Controller {
 	{
 
 		$konfigurasi = $this->konfigurasi_model->listing();
+		$kategori_produk = $this->kategori_produk_model->listing();
 		
 		$data = array(	'title'	=>	'Galeri | Padma Indonesia',
 						'konfigurasi'	=> 	$konfigurasi,
+						'kategori_produk'	=>	$kategori_produk,
 						'isi'	=>	'Galeri/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);

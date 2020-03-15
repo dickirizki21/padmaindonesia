@@ -14,6 +14,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/icons/favicon.ico">
 
+    <!-- botstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- Plugins CSS File -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/padma-home/demo-4/assets/css/bootstrap.min.css">
 

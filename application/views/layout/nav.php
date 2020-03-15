@@ -17,20 +17,7 @@
                             <a href="index.html#" class="search-toggle" role="button"><i class="icon-magnifier"></i></a>
                             <form action="#" method="get">
                                 <div class="header-search-wrapper">
-                                    <input type="search" class="form-control" name="q" id="q" placeholder="Search..." required>
-                                    <div class="select-custom">
-                                        <select id="cat" name="cat">
-                                            <option value="">All Kategori</option>
-                                            <option value="4">- Kategori 1</option>
-                                            <option value="12">- Kategori 2</option>
-                                            <option value="13">- Kategori 3</option>
-                                            <option value="66">- Kategori 4</option>
-                                            <option value="67">- Kategori 5</option>
-                                            <option value="5">- Kategori 6</option>
-                                            <option value="21">- Kategori 7</option>
-                                            <option value="22">- Kategori 8</option>
-                                        </select>
-                                    </div><!-- End .select-custom -->
+                                    <input type="search" class="form-control" name="q" id="q" placeholder="Cari Yang Kamu Mau..." required>
                                     <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
                                 </div><!-- End .header-search-wrapper -->
                             </form>
@@ -54,23 +41,22 @@
                 <div class="container">
                     <nav class="main-nav">
                         <ul class="menu sf-arrows">
-                            <li class="active"><a href="<?php echo base_url('home') ?>">Beranda</a></li>
-                            <li class="active"><a href="<?php echo base_url('tentang') ?>">Tentang Kami</a></li>
-                            <li><a href="<?php echo base_url('produk') ?>">Produk</a>
-                                <ul>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 1</a></li>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 2</a></li>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 3</a></li>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 4</a></li>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 5</a></li>
-                                    <li><a href="<?php echo base_url('produk1') ?>">Produk 6</a></li>
+                            <li><a href="<?php echo base_url('home') ?>">Beranda</a></li>
+                            <li><a href="<?php echo base_url('tentang') ?>">Tentang Kami</a></li>
+                            <li><a href="<?php echo base_url('produk') ?>" class="sf-with-ul">Produk</a>
+                                <ul style="max-height: 250px; overflow: auto;">
+                                    <?php foreach ($kategori_produk as $kategori_produk) { ?>
+                                        <li><a href="<?php echo base_url('$kategori_produk->id_kategori_produk') ?>">
+                                            <i class="fa fa-genderless" style="font-size:10px;"></i>
+                                            <?php echo $kategori_produk->nama_kategori_produk ?></a></li>
+                                    <?php } ?>
                                 </ul>
                             </li>
-                            <li class="active"><a href="<?php echo base_url('galeri') ?>">Galeri</a></li>
+                            <li><a href="<?php echo base_url('galeri') ?>">Galeri</a></li>
                             <li><a href="<?php echo base_url('berita') ?>">Berita</a></li>
                             <li><a href="<?php echo base_url('artikel') ?>">Artikel</a></li>
                             <li><a href="<?php echo base_url('toko') ?>">Toko Kami</a></li>
-                            <li class="active"><a href="<?php echo base_url('kontak') ?>">Kontak Kami</a></li>
+                            <li><a href="<?php echo base_url('kontak') ?>">Kontak Kami</a></li>
                         </ul>
                     </nav>
                 </div><!-- End .header-bottom -->
