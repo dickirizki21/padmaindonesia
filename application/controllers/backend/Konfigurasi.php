@@ -30,7 +30,6 @@ class Konfigurasi extends CI_Controller {
 		$produk 				= 	$this->produk_model->listing();
 		$data_produk 			= 	count($produk);
 		$konfigurasi 			= 	$this->konfigurasi_model->listing();
-		$data_konfigurasi		= 	count($konfigurasi);
 
 
 		//validasi input

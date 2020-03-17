@@ -175,7 +175,7 @@
                 <?php 
                 $i=0;
                 foreach ($produk as $produk) { 
-                if ($i<4) { ?>
+                if ($i < 8) { ?>
                     <div class="col-6 col-md-3">
                         <div class="product">
                             <div class="card">

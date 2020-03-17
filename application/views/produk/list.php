@@ -1,58 +1,16 @@
 <main class="main">
     <div class="banner banner-cat" style="background-image: url('<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/banners/banner-top.jpg');">
         <div class="banner-content container">
-            <h2 class="banner-subtitle">check out over <span>200+</span></h2>
             <h1 class="banner-title">
-                INCREDIBLE deals
+                Padma Indonesia
             </h1>
             <a href="category-4col.html#" class="btn btn-dark">Belanja Sekarang</a>
         </div><!-- End .banner-content -->
     </div><!-- End .banner -->
-    
-    <nav aria-label="breadcrumb" class="breadcrumb-nav">
-        <div class="container">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>
-                <li class="breadcrumb-item"><a href="category-4col.html#">Kategori</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Kaos</li>
-            </ol>
-        </div><!-- End .container -->
-    </nav>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-9">
-                <nav class="toolbox">
-                    <div class="toolbox-left">
-                        <div class="toolbox-item toolbox-sort">
-                            <div class="select-custom">
-                                <select name="orderby" class="form-control">
-                                    <option value="menu_order" selected="selected">Default sorting</option>
-                                    <option value="popularity">Sort by popularity</option>
-                                    <option value="rating">Sort by average rating</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
-                                </select>
-                            </div><!-- End .select-custom -->
-
-                            <a href="category-4col.html#" class="sorter-btn" title="Set Ascending Direction"><span class="sr-only">Set Ascending Direction</span></a>
-                        </div><!-- End .toolbox-item -->
-                    </div><!-- End .toolbox-left -->
-
-                    <div class="toolbox-item toolbox-show">
-                        <label>Showing 1–9 of 60 results</label>
-                    </div><!-- End .toolbox-item -->
-
-                    <div class="layout-modes">
-                        <a href="category.html" class="layout-btn btn-grid active" title="Grid">
-                            <i class="icon-mode-grid"></i>
-                        </a>
-                        <a href="category-list.html" class="layout-btn btn-list" title="List">
-                            <i class="icon-mode-list"></i>
-                        </a>
-                    </div><!-- End .layout-modes -->
-                </nav>
 
             <div class="row row-sm">
                 <?php foreach ($produk as $produk) { ?>
@@ -67,12 +25,12 @@
                             </figure>
                                 <div class="product-details">
                                     <div class="price-box">
-                                        <span class="product-price"><?php echo $produk->nama_produk ?></span>
+                                        <label class="product-price"><?php echo substr($produk->nama_produk,0,20)  ?></label>
                                     </div><!-- End .price-box -->
 
-                                    <div class="product-action">
-                                        <a href="<?php echo base_url('detail1') ?>" class="paction add-cart" title="Detail Produk">
-                                            <span>Detail Produk</span>
+                                    <div class="product-action btn btn-light">
+                                         <i class="fa fa-eye"></i><a href="<?php echo base_url('detail1') ?>" title="Detail Produk">
+                                            <span> Detail Produk</span>
                                         </a>
                                     </div><!-- End .product-action -->
                                 </div><!-- End .product-details -->
@@ -83,10 +41,6 @@
             </div><!-- End .row -->
 
                 <nav class="toolbox toolbox-pagination">
-                    <div class="toolbox-item toolbox-show">
-                        <label>Showing 1–9 of 60 results</label>
-                    </div><!-- End .toolbox-item -->
-
                     <ul class="pagination">
                         <li class="page-item disabled">
                             <a class="page-link page-link-btn" href="category-4col.html#"><i class="icon-angle-left"></i></a>

@@ -43,7 +43,7 @@ class Artikel_model extends CI_Model {
 			}
 		}
 
-		// listing kategori artikel
+	// listing kategori artikel
 	public function listingartikel()
 	{
 		$this->db->select('tbl_artikel.*,
@@ -73,29 +73,75 @@ class Artikel_model extends CI_Model {
 		return $query->result();
 	}
 
-		// detail data Artikrl
-		public function detail($id_artikel)
-		{
-			$this->db->select('*');
-			$this->db->from('tbl_artikel');
-			//where
-			$this->db->where('id_artikel', $id_artikel);
-			$this->db->order_by('id_artikel', 'desc');
-			$query = $this->db->get();
-			return $query->row();
-		}
+	// listing artikel di main page
+	public function listing_artikel_mainpage($limit, $start)
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		// join
+			$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'LEFT');
+			$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'LEFT');
+		// end join
+		$this->db->where(array( 'status_artikel'	=>	'PUBLISH',
+								'jenis_artikel'		=>	'Artikel'));
+		$this->db->order_by('id_artikel', 'DESC');
+		$this->db->limit($limit,$start);
+		$query = $this->db->get();
+		return $query->result();	
+	}
 
-		public function get_list($limit, $start)
-		{
-		$this->db->join('tbl_kategori_artikel', 'tbl_artikel.id_kategori_artikel = tbl_kategori_artikel.id_kategori_artikel', 'LEFT');
-		$this->db->join('tbl_pengguna', 'tbl_artikel.id_pengguna = tbl_pengguna.id_pengguna', 'LEFT');
-	 	$this->db->order_by('tanggal_post', 'desc');
-	 	$this->db->where('status_artikel',"PUBLISH");
-        $query = $this->db->get('tbl_artikel', $limit, $start);
-        return $query->result();
-    	}
+	// total listing artikel di main page
+	public function total_listing_artikel_mainpage()
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		// join
+			$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'LEFT');
+			$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'LEFT');
+		// end join
+		$this->db->where(array( 'status_artikel'	=>	'PUBLISH',
+								'jenis_artikel'		=>	'Artikel'));
+		$this->db->order_by('id_artikel', 'DESC');
+		$query = $this->db->get();
+		return $query->result();	
+	}
 
-		public function listingartikelterbaru()
+	// listing kategori artikel di main page
+	public function kategori_artikel($id_kategori_artikel,$limit, $start)
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		// join
+			$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'LEFT');
+			$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'LEFT');
+		// end join
+		$this->db->where(array( 'status_artikel'	=>	'PUBLISH',
+								'jenis_artikel'		=>	'Artikel',
+								'tbl_artikel.id_kategori_artikel'	=> $id_kategori_artikel));
+		$this->db->order_by('id_artikel', 'DESC');
+		$this->db->limit($limit,$start);
+		$query = $this->db->get();
+		return $query->result();	
+	}
+
+	// total listing artikel di main page
+	public function total_Kategori_artikel_mainpage($id_kategori_artikel)
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		// join
+			$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'LEFT');
+			$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'LEFT');
+		// end join
+		$this->db->where(array( 'status_artikel'	=>	'PUBLISH',
+								'jenis_artikel'		=>	'Artikel',
+								'tbl_artikel.id_kategori_artikel'	=> $id_kategori_artikel));
+		$this->db->order_by('id_artikel', 'DESC');
+		$query = $this->db->get();
+		return $query->result();	
+	}
+
+	public function listingartikelterbaru()
 	{
 		$this->db->select('tbl_artikel.*,
 							tbl_kategori_artikel.nama_kategori_artikel,
@@ -133,6 +179,25 @@ class Artikel_model extends CI_Model {
 			$query = $this->db->get();
 			return $query->result();	
 	}
+
+	// ngambil artikel detail
+	public function detail_artikel($slug_artikel)
+		{
+			$this->db->select('tbl_artikel.*,
+							tbl_kategori_artikel.nama_kategori_artikel,
+							tbl_kategori_artikel.slug_kategori_artikel,
+							tbl_pengguna.nama_pengguna');
+			$this->db->from('tbl_artikel');
+			// star join 2 tabel
+				$this->db->join('tbl_kategori_artikel', 'tbl_artikel.id_kategori_artikel = tbl_kategori_artikel.id_kategori_artikel', 'LEFT');
+				$this->db->join('tbl_pengguna', 'tbl_artikel.id_pengguna = tbl_pengguna.id_pengguna', 'LEFT');
+			//where
+			$this->db->where('slug_artikel', $slug_artikel);
+			$this->db->where('jenis_artikel', "Artikel");
+			$this->db->order_by('id_artikel', 'desc');
+			$query = $this->db->get();
+			return $query->row();
+		}
 
 		// Login 
 		public function login($username, $password)

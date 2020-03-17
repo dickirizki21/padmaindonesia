@@ -29,7 +29,7 @@
                 </div><!-- End .container -->
             </div><!-- End .about-section -->
 
-            <div class="features-section">
+            <div class="features-section mb-10">
                 <div class="container">
                     <h2 class="subtitle">MENGAPA MEMILIH KAMI?</h2>
                     <div class="row">
@@ -38,8 +38,8 @@
                                 <i class="icon-shipped"></i>
 
                                 <div class="feature-box-content">
-                                    <h3>Gratis Biaya Pengiriman</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr in some form.</p>
+                                    <h3>Lorem Lorem Ipsum Ipsum</h3>
+                                    <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 </div><!-- End .feature-box-content -->
                             </div><!-- End .feature-box -->
                         </div><!-- End .col-lg-4 -->
@@ -49,8 +49,8 @@
                                 <i class="icon-us-dollar"></i>
 
                                 <div class="feature-box-content">
-                                    <h3>100% Uang Kembali</h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    <h3>Lorem Lorem Ipsum Ipsum</h3>
+                                    <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                                 </div><!-- End .feature-box-content -->
                             </div><!-- End .feature-box -->
                         </div><!-- End .col-lg-4 -->
@@ -60,105 +60,12 @@
                                 <i class="icon-online-support"></i>
 
                                 <div class="feature-box-content">
-                                    <h3>Kualitas Print</h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                    <h3>Lorem Lorem Ipsum Ipsum</h3>
+                                    <p align="justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                                 </div><!-- End .feature-box-content -->
                             </div><!-- End .feature-box -->
                         </div><!-- End .col-lg-4 -->
                     </div><!-- End .row -->
                 </div><!-- End .container -->
             </div><!-- End .features-section -->
-
-            <div class="testimonials-section">
-                <div class="container">
-                    <h2 class="subtitle text-center">TESTIMONI</h2>
-
-                    <div class="testimonials-carousel owl-carousel owl-theme">
-                        <div class="testimonial">
-                            <div class="testimonial-owner">
-                                <figure>
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/clients/client1.png" alt="client">
-                                </figure>
-
-                                <div>
-                                    <h4 class="testimonial-title">john Smith</h4>
-                                    <span>Proto Co Ceo</span>
-                                </div>
-                            </div><!-- End .testimonial-owner -->
-
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mipsum dolor sit amet, consectetur elitad adipiscing.</p>
-                            </blockquote>
-                        </div><!-- End .testimonial -->
-
-                        <div class="testimonial">
-                            <div class="testimonial-owner">
-                                <figure>
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/clients/client2.png" alt="client">
-                                </figure>
-
-                                <div>
-                                    <h4 class="testimonial-title">Bob Smith</h4>
-                                    <span>Proto Co Ceo</span>
-                                </div>
-                            </div><!-- End .testimonial-owner -->
-
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mipsum dolor sit amet, consectetur elitad adipiscing.</p>
-                            </blockquote>
-                        </div><!-- End .testimonial -->
-
-                        <div class="testimonial">
-                            <div class="testimonial-owner">
-                                <figure>
-                                    <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/clients/client1.png" alt="client">
-                                </figure>
-
-                                <div>
-                                    <h4 class="testimonial-title">john Smith</h4>
-                                    <span>Proto Co Ceo</span>
-                                </div>
-                            </div><!-- End .testimonial-owner -->
-
-                            <blockquote>
-                                <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mipsum dolor sit amet, consectetur elitad adipiscing.</p>
-                            </blockquote>
-                        </div><!-- End .testimonial -->
-                    </div><!-- End .testimonials-slider -->
-                </div><!-- End .container -->
-            </div><!-- End .testimonials-section -->
-
-            <div class="counters-section">
-                <center><div class="container">
-                    <div class="row" style="padding-left: 195px">
-                        <div class="col-6 col-md-4 count-container">
-                            <div class="count-wrapper">
-                                <span class="count" data-from="0" data-to="200" data-speed="2000" data-refresh-interval="50">200</span>+
-                            </div><!-- End .count-wrapper -->
-                            <h4 class="count-title">PELANGGAN TETAP</h4>
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-4 count-container">
-                            <div class="count-wrapper">
-                                <span class="count" data-from="0" data-to="1800" data-speed="2000" data-refresh-interval="50">1800</span>+
-                            </div><!-- End .count-wrapper -->
-                            <h4 class="count-title">TIM KAMI</h4>
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-4 count-container">
-                            <div class="count-wrapper">
-                                <span class="count" data-from="0" data-to="24" data-speed="2000" data-refresh-interval="50">24</span><span>HR</span>
-                            </div><!-- End .count-wrapper -->
-                            <h4 class="count-title">MITRA</h4>
-                        </div><!-- End .col-md-4 -->
-
-                        <div class="col-6 col-md-4 count-container">
-                            <div class="count-wrapper">
-                                <span class="count" data-from="0" data-to="265" data-speed="2000" data-refresh-interval="50">265</span>+
-                            </div><!-- End .count-wrapper -->
-                            <h4 class="count-title">PRODUK</h4>
-                        </div><!-- End .col-md-4 -->                       
-                    </div><!-- End .row -->
-                </div></center><!-- End .container --> 
-            </div><!-- End .counters-section -->
         </main><!-- End .main -->

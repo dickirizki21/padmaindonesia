@@ -34,12 +34,44 @@ class Kategori_artikel_model extends CI_Model {
 
 		public function listingarsipartikel()
 		{
-			$this->db->select('*');
-			$this->db->from('tbl_kategori_artikel');
-			$this->db->order_by('tanggal_ka', 'desc');
+			$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+			$this->db->from('tbl_artikel');
+			// join
+				$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'LEFT');
+				$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'LEFT');
+			// end join
+			$this->db->where('jenis_artikel', "Artikel");
+			$this->db->group_by('YEAR(tbl_artikel.tanggal_post)');
+			$this->db->order_by('id_artikel', 'DESC');
 			$query = $this->db->get();
 			return $query->result();
 
+		}
+
+		public function listing_by_kategori_artikel($slug_kategori_artikel)
+		{
+			$this->db->select('*');
+			$this->db->from('tbl_kategori_artikel');
+			$this->db->where('slug_kategori_artikel', $slug_kategori_artikel);
+			$this->db->order_by('id_kategori_artikel');
+			$query = $this->db->get();
+			return $query->row();
+		}
+
+		// listing kategori berita group by
+		public function kategori_artikel_groupby()
+		{
+			$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+			$this->db->from('tbl_artikel');
+			// join
+				$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'LEFT');
+				$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'LEFT');
+			// end join
+			$this->db->where('jenis_artikel', "Artikel");
+			$this->db->group_by('tbl_artikel.id_kategori_artikel');
+			$this->db->order_by('id_artikel', 'DESC');
+			$query = $this->db->get();
+			return $query->result();
 		}
 	
 		
