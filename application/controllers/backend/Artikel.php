@@ -132,7 +132,6 @@ class Artikel extends CI_Controller {
 		$kategori_artikel 		= 	$this->kategori_artikel_model->listing();
 		$data_kategori_artikel 	=	count($kategori_artikel);
 		$artikel 				= 	$this->artikel_model->listing($id_artikel);
-		$data_artikel 			= 	count($artikel);
 		$produk 				= 	$this->produk_model->listing();
 		$data_produk 			= 	count($produk);
 		
@@ -149,7 +148,6 @@ class Artikel extends CI_Controller {
 						'artikel'				=>	$artikel,
 						'kategori_artikel'		=>	$kategori_artikel,
 						'kategori_produk'		=>	$kategori_produk,
-						'data_artikel'			=>	$data_artikel,
 						'data_kategori_artikel'	=>	$data_kategori_artikel,
 						'isi'					=>	'admin/artikel/edit'
 					);

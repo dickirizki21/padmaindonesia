@@ -1,3 +1,6 @@
+<?php 
+$kategori_artikel_kanan = $this->konfigurasi_model->kategori_artikel_kanan();
+ ?>
 <main class="main">
             <div class="container mt-3">
                 <div class="row">
@@ -5,7 +8,7 @@
                     <?php foreach ($artikel as $artikels) { ?>
                         <article class="entry">
                             <div class="entry-media">
-                                <a href="single.html">
+                                <a href="<?php echo base_url('artikel/readar/'.$artikels->slug_artikel) ?>">
                                     <img src="<?php echo base_url('assets/images/artikel/'.$artikels->gambar) ?>" alt="Artikel Image">
                                 </a>
                             </div><!-- End .entry-media -->
@@ -22,16 +25,14 @@
 
                                 <div class="entry-content">
                                     <p align="justify"><?php echo substr($artikels->isi_artikel,0,500)."....." ?></p>
-                                    <a href="" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
-                                </div><!-- End .entry-content -->
+                                    <a href="<?php echo base_url('artikel/readar/'.$artikels->slug_artikel) ?>" style="color: #fff;" class="read-more btn btn-primary">Read More <i class="icon-angle-double-right"></i></a>
 
-                                <div class="entry-meta">
                                     <span><i class="icon-calendar"></i><?php echo date_format(new DateTime($artikels->tanggal_post), 'd F Y') ?></span>
                                     <span><i class="icon-user"></i>Ditulis Oleh <?php echo $artikels->nama_pengguna ?></span>
                                     <span><i class="fas fa-bullhorn"></i></i></i>
                                         <a><?php echo $artikels->nama_kategori_artikel ?></a>
                                     </span>
-                                </div><!-- End .entry-meta -->
+                                </div><!-- End .entry-content -->
                             </div><!-- End .entry-body -->
                         </article><!-- End .entry -->            
                     <?php } ?>
@@ -41,19 +42,6 @@
                                 <?php if (isset($pagination)) { echo  $pagination; }?>
                                 <div class="clearfix"></div>
                             </div>
-                            <!-- <ul class="pagination">
-                                <li class="page-item active">
-                                    <a class="page-link" href="blog.html#">1 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="blog.html#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="blog.html#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="blog.html#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="blog.html#">5</a></li>
-                                <li class="page-item"><span class="page-link">...</span></li>
-                                <li class="page-item">
-                                    <a class="page-link page-link-btn" href="blog.html#"><i class="icon-angle-right"></i></a>
-                                </li>
-                            </ul> -->
                         </nav>
                     </div><!-- End .col-lg-9 -->
 
@@ -61,7 +49,7 @@
                         <div class="sidebar-wrapper">
                             <div class="widget widget-search">
                                 <form role="search" method="get" class="search-form" action="#">
-                                    <input type="search" class="form-control" placeholder="Search posts here..." name="s" required>
+                                    <input type="search" class="form-control" placeholder="Cari Artikel Disini..." name="s" required>
                                     <button type="submit" class="search-submit" title="Search">
                                         <i class="icon-search"></i>
                                         <span class="sr-only">Search</span>
@@ -72,9 +60,9 @@
                             <div class="widget widget-categories">
                                 <h4 class="widget-title">Artikel Kategori</h4>
 
-                                <?php foreach ($kategori_artikel as $kategori_artikel) { ?>
+                                <?php foreach ($kategori_artikel_kanan as $kategori_artikel_kanan) { ?>
                                 <ul class="list">
-                                    <li><a href="<?php echo base_url('artikel/kategori/'.$kategori_artikel->slug_kategori_artikel) ?>"><?php echo $kategori_artikel->nama_kategori_artikel ?></a></li>
+                                    <li><a href="<?php echo base_url('artikel/kategori/'.$kategori_artikel_kanan->slug_kategori_artikel) ?>"><?php echo $kategori_artikel_kanan->nama_kategori_artikel ?></a></li>
                                 </ul>
                                 <?php } ?>
                             </div><!-- End .widget -->
@@ -86,13 +74,13 @@
                                 <ul class="simple-entry-list mt-1 mb-1">
                                     <li>
                                         <div class="entry-media">
-                                            <a href="single.html">
+                                            <a href="<?php echo base_url('artikel/readar/'.$listingartikelterbaru->slug_artikel) ?>">
                                                 <img style="height: 50px;die;" src="<?php echo base_url('assets/images/artikel/'.$listingartikelterbaru->gambar) ?>" alt="Post">
 
                                             </a>
                                         </div><!-- End .entry-media -->
                                         <div class="entry-info">
-                                            <a href="single.html"><?php echo substr($listingartikelterbaru->judul_artikel,0,20)."..." ?></a>
+                                            <a href="<?php echo base_url('artikel/readar/'.$listingartikelterbaru->slug_artikel) ?>"><?php echo substr($listingartikelterbaru->judul_artikel,0,20)."..." ?></a>
                                             <div class="entry-meta">
                                                 <?php echo date_format(new DateTime($listingartikelterbaru->tanggal_post), 'd F Y') ?>
                                             </div><!-- End .entry-meta -->

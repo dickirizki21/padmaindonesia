@@ -5,6 +5,7 @@ class Berita extends CI_Controller {
 
 	public function __construct()
 	{
+		// load model
 		parent::__construct();
 		$this->load->model('konfigurasi_model');
 		$this->load->model('kategori_artikel_model');
@@ -15,24 +16,102 @@ class Berita extends CI_Controller {
 	// Halaman Utama Website - Beritapage
 	public function index()
 	{
-		$kategori_artikel = $this->kategori_artikel_model->listing();
-		$listingberita = $this->artikel_model->listingberita();
-		$listingberitaterbaru = $this->artikel_model->listingberitaterbaru();
-		$kategori_produk = $this->kategori_produk_model->listing();
+		// listing berita dengan pagination
+		$this->load->library('pagination');
 
+		$config['base_url'] 	= base_url('berita/index/');
+		$config['total_rows'] 	= count($this->artikel_model->total_listing_berita_mainpage());
+		$config['per_page'] 	= 5;
+		$config['uri_segment']	= 3;
+		// limit dan start
+			$limit			= $config['per_page'];
+			$start			= ($this->uri->segment(3)) ? ($this->uri->segment(3)) : 0;
 
-		$konfigurasi = $this->konfigurasi_model->listing();
+		$this->pagination->initialize($config);
 
-		$data = array(	'title'				=>	'Berita | Padma Indonesia',
-						'konfigurasi'		=> 	$konfigurasi,
-						'listingberita'		=> 	$listingberita,
-						'kategori_artikel'	=>	$kategori_artikel,
-						'listingberita_terbaru'	=>	$listingberitaterbaru,
-						'kategori_produk'	=>	$kategori_produk,
-						'isi'				=>	'Berita/list'
+		$berita					= $this->artikel_model->listing_berita_mainpage($limit,$start);
+
+		// end listing berita dengan pagination
+		$konfigurasi 			= $this->konfigurasi_model->listing();
+		$kategori_artikel 		= $this->kategori_artikel_model->listing();
+		$listingberita 			= $this->artikel_model->listingberita();
+		$listingberitaterbaru 	= $this->artikel_model->listingberitaterbaru();
+		$listingarsipberita 	= $this->kategori_artikel_model->listingarsipartikel();
+		$kategori_produk 		= $this->kategori_produk_model->listing();
+
+		$data = array(	'title'					=>	'Berita | Padma Indonesia',
+						'berita'				=>	$berita,
+						'konfigurasi'			=> 	$konfigurasi,
+						'listingberita'			=> 	$listingberita,
+						'kategori_artikel'		=>	$kategori_artikel,
+						'listingberitaterbaru'	=>	$listingberitaterbaru,
+						'listingarsipberita'	=>	$listingarsipberita,
+						'kategori_produk'		=>	$kategori_produk,
+						'pagination'			=>	$this->pagination->create_links(),
+						'isi'					=>	'berita/list'
 						);
 		$this->load->view('layout/wrapper', $data, FALSE);
 	}
+
+	// listing kategori artikel
+	public function kategori_berita($slug_kategori_artikel)
+	{
+
+		// listing kategori berita dengan pagination
+		$this->load->library('pagination');
+
+		$config['base_url'] 	= base_url('berita/index/');
+		$config['total_rows'] 	= count($this->artikel_model->total_listing_berita_mainpage());
+		$config['per_page'] 	= 5;
+		$config['uri_segment']	= 5;
+		// limit dan start
+			$limit				= $config['per_page'];
+			$start				= ($this->uri->segment(5)) ? ($this->uri->segment(5)) : 0;
+
+		$this->pagination->initialize($config);
+
+		$berita					= $this->artikel_model->listing_berita_mainpage($limit,$start);
+			
+		// end listing berita dengan pagination
+		$konfigurasi 			= $this->konfigurasi_model->listing();
+		$listingarsipberita 	= $this->kategori_artikel_model->listingarsipartikel();
+		$listingartikel 		= $this->artikel_model->listingartikel();
+		$listingberitaterbaru 	= $this->artikel_model->listingberitaterbaru();
+		$kategori_produk 		= $this->kategori_produk_model->listing();
+
+		$data = array(	'title'					=>	'Berita | Padma Indonesia',
+						'berita'				=>	$berita,
+						'listingartikel'		=> 	$listingartikel,
+						'listingberitaterbaru'	=>	$listingberitaterbaru,
+						'listingarsipberita'	=> 	$listingarsipberita,
+						'konfigurasi'			=> 	$konfigurasi,
+						'kategori_artikel'		=>	$kategori_artikel,
+						'kategori_produk'		=>	$kategori_produk,
+						'pagination'			=>	$this->pagination->create_links(),
+						'isi'					=>	'berita/list'
+						);
+		$this->load->view('layout/wrapper', $data, FALSE);
+	}
+
+	    public function readber($slug_artikel)
+    {
+        $berita 				= $this->artikel_model->detail_berita($slug_artikel);
+		$konfigurasi 			= $this->konfigurasi_model->listing();
+		$listingarsipartikel 	= $this->kategori_artikel_model->listingarsipartikel();
+		$listingartikel 		= $this->artikel_model->listingartikel();
+		$listingartikelterbaru 	= $this->artikel_model->listingartikelterbaru();
+		$kategori_produk 		= $this->kategori_produk_model->listing();
+
+                $data = array(  'title'					=> 	$berita->judul_artikel,
+                                'berita'				=>	$berita,
+                                'listingartikel'		=> 	$listingartikel,
+								'listingartikelterbaru'	=>	$listingartikelterbaru,
+								'listingarsipartikel'	=> 	$listingarsipartikel,
+								'konfigurasi'			=> 	$konfigurasi,	
+                                'isi'       			=>  'berita/detail'
+                            );
+                $this->load->view('layout/wrapper', $data, FALSE);              
+    }
 
 }
 

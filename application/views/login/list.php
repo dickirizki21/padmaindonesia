@@ -31,7 +31,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url() ?>assets/admin/index2.html"><b>Padma</b>Indonesia</a>
+    <a href="<?php echo base_url() ?>assets/admin/index2.html"><b>Padma</b>Indonesia.id</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -63,14 +63,14 @@ echo form_open(base_url('login'));
         <span class="fa fa-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input name="password" type="password" class="form-control" placeholder="Password">
+        <input name="password" type="password" id="myInput" class="form-control" placeholder="Password">
         <span class="fa fa-lock form-control-feedback"></span>
       </div>
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Remember Me
+              <input type="checkbox" onclick="myFunction()"> Show Password
             </label>
           </div>
         </div>
@@ -82,8 +82,6 @@ echo form_open(base_url('login'));
       </div>
 
 <?php echo form_close(); ?>
-
-    <a href="#">Lupa Password</a><br>
   </div>
   <!-- /.login-box-body -->
 </div>
@@ -102,6 +100,16 @@ echo form_open(base_url('login'));
       radioClass: 'iradio_square-blue',
       increaseArea: '20%' /* optional */
     });
+  });
+</script>
+<script>
+  $(function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
   });
 </script>
 </body>

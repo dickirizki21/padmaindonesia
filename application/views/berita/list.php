@@ -1,20 +1,14 @@
-<main class="main">
-            <nav aria-label="breadcrumb" class="breadcrumb-nav">
-                <div class="container">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('home') ?>"><i class="icon-home"></i></a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Berita</li>
-                    </ol>
-                </div><!-- End .container -->
-            </nav>
-
-            <div class="container">
+<?php 
+$kategori_berita_kanan = $this->konfigurasi_model->kategori_berita_kanan();
+ ?>
+    <main class="main">
+            <div class="container mt-3">
                 <div class="row">
-                    <?php foreach ($listingberita as $listingberita) { ?>
                         <div class="col-lg-9">
+                            <?php foreach ($listingberita as $listingberita) { ?>
                             <article class="entry">
                                 <div class="entry-media">
-                                    <a href="#">
+                                    <a href="<?php echo base_url('berita/readber/'.$listingberita->slug_artikel) ?>">
                                         <img src="<?php echo base_url('assets/images/artikel/'.$listingberita->gambar) ?>" alt="Post">
                                     </a>
                                 </div><!-- End .entry-media -->
@@ -26,13 +20,13 @@
                                     </div><!-- End .entry-date -->
 
                                     <h2 class="entry-title">
-                                        <a href="<?php echo base_url('detail') ?>"><?php echo $listingberita->judul_artikel ?></a>
+                                        <a href="<?php echo base_url('berita/readber/'.$listingberita->slug_artikel) ?>"><?php echo $listingberita->judul_artikel ?></a>
                                     </h2>
 
                                     <div class="entry-content">
                                         <p><?php echo substr($listingberita->isi_artikel,0,500)."....." ?></p>
 
-                                        <a href="single.html" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
+                                        <a href="<?php echo base_url('berita/readber/'.$listingberita->slug_artikel) ?>" class="read-more">Read More <i class="icon-angle-double-right"></i></a>
                                     </div><!-- End .entry-content -->
 
                                     <div class="entry-meta">
@@ -44,29 +38,20 @@
                                     </div><!-- End .entry-meta -->
                                 </div><!-- End .entry-body -->
                             </article><!-- End .entry -->
-                            <nav class="toolbox toolbox-pagination">
-                                <ul class="pagination">
-                                    <li class="page-item active">
-                                        <a class="page-link" href="blog.html#">1 <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="blog.html#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="blog.html#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="blog.html#">4</a></li>
-                                    <li class="page-item"><a class="page-link" href="blog.html#">5</a></li>
-                                    <li class="page-item"><span class="page-link">...</span></li>
-                                    <li class="page-item">
-                                        <a class="page-link page-link-btn" href="blog.html#"><i class="icon-angle-right"></i></a>
-                                    </li>
-                                </ul>
+                            <?php } ?>   
+                            <nav>
+                                <div class="paginasi col-md-12 text-right">
+                                    <?php if (isset($pagination)) { echo  $pagination; }?>
+                                    <div class="clearfix"></div>
+                                </div>
                             </nav>
                         </div><!-- End .col-lg-9 -->
-                    <?php } ?>
 
                     <aside class="sidebar col-lg-3">
                         <div class="sidebar-wrapper">
                             <div class="widget widget-search">
                                 <form role="search" method="get" class="search-form" action="#">
-                                    <input type="search" class="form-control" placeholder="Search posts here..." name="s" required>
+                                    <input type="search" class="form-control" placeholder="Cari Promo Disini...." name="s" required>
                                     <button type="submit" class="search-submit" title="Search">
                                         <i class="icon-search"></i>
                                         <span class="sr-only">Search</span>
@@ -77,74 +62,44 @@
                             <div class="widget widget-categories">
                                 <h4 class="widget-title">Kategori Berita</h4>
 
-                                <?php foreach ($kategori_artikel as $kategori_artikel) { ?>
+                                <?php foreach ($kategori_berita_kanan as $kategori_berita_kanan) { ?>
                                     <ul class="list">
-                                        <li><a href="<?php echo $kategori_artikel->nama_kategori_artikel ?>"><?php echo $kategori_artikel->nama_kategori_artikel ?></a></li>
+                                        <li><a href="<?php echo base_url('artikel/kategori/'.$kategori_berita_kanan->slug_kategori_artikel) ?>"><?php echo $kategori_berita_kanan->nama_kategori_artikel ?></a></li>
                                     </ul>
                                 <?php } ?>
                             </div><!-- End .widget -->
 
                             <div class="widget">
-                                <h4 class="widget-title">Recent Posts</h4>
-
+                                <h4 class="widget-title">Berita Terbaru</h4>
+                                <?php foreach ($listingberitaterbaru as $listingberitaterbaru) { ?>
                                 <ul class="simple-entry-list">
                                     <li>
                                         <div class="entry-media">
                                             <a href="single.html">
-                                                <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/widget/post-1.jpg" alt="Post">
+                                                <img src="<?php echo base_url('assets/images/artikel/'.$listingberitaterbaru->gambar) ?>" alt="Post">
                                             </a>
                                         </div><!-- End .entry-media -->
-                                        <div class="entry-info">
-                                            <a href="single.html">Post Format - Video</a>
+                                       <div class="entry-info">
+                                            <a href="<?php echo base_url('berita/readber/'.$listingberitaterbaru->slug_artikel) ?>"><?php echo substr($listingberitaterbaru->judul_artikel,0,20)."..." ?></a>
                                             <div class="entry-meta">
-                                                April 08, 2018
-                                            </div><!-- End .entry-meta -->
-                                        </div><!-- End .entry-info -->
-                                    </li>
-
-                                    <li>
-                                        <div class="entry-media">
-                                            <a href="single.html">
-                                                <img src="<?php echo base_url() ?>assets/padma-home/demo-4/assets/images/blog/widget/post-2.jpg" alt="Post">
-                                            </a>
-                                        </div><!-- End .entry-media -->
-                                        <div class="entry-info">
-                                            <a href="single.html">Post Format - Image</a>
-                                            <div class="entry-meta">
-                                                March 23, 2016
+                                                <?php echo date_format(new DateTime($listingberitaterbaru->tanggal_post), 'd F Y') ?>
                                             </div><!-- End .entry-meta -->
                                         </div><!-- End .entry-info -->
                                     </li>
                                 </ul>
-                            </div><!-- End .widget -->
-
-                            <div class="widget">
-                                <h4 class="widget-title">Tagcloud</h4>
-
-                                <div class="tagcloud">
-                                    <a href="blog.html#">Fashion</a>
-                                    <a href="blog.html#">Shoes</a>
-                                    <a href="blog.html#">Skirts</a>
-                                    <a href="blog.html#">Dresses</a>
-                                    <a href="blog.html#">Bags</a>
-                                </div><!-- End .tagcloud -->
+                                <?php } ?>
                             </div><!-- End .widget -->
 
                             <div class="widget">
                                 <h4 class="widget-title">Archive</h4>
 
-                                <ul class="list">
-                                    <li><a href="blog.html#">April 2018</a></li>
-                                    <li><a href="blog.html#">March 2018</a></li>
-                                    <li><a href="blog.html#">February 2018</a></li>
+                                <ul class="list" class="treeview-menu">
+                                    <?php foreach($listingarsipberita as $listingarsipberita) { ?>
+                                        <li><a><?php echo date_format(new DateTime($listingarsipberita->tanggal_post), 'F Y') ?>
+                                        </a>
+                                        </li>
+                                    <?php } ?>
                                 </ul>
-                            </div><!-- End .widget -->
-
-
-                            <div class="widget widget_compare">
-                                <h4 class="widget-title">Compare Products</h4>
-
-                                <p>You have no items to compare.</p>
                             </div><!-- End .widget -->
                         </div><!-- End .sidebar-wrapper -->
                     </aside><!-- End .col-lg-3 -->

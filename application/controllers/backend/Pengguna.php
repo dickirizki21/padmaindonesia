@@ -73,7 +73,6 @@ class Pengguna extends CI_Controller {
 	public function edit($id_pengguna)
 	{
 		$pengguna 		=	$this->pengguna_model->listing($id_pengguna);
-		$data_pengguna	=	count($pengguna);
 
 
 		//validaasi input
@@ -87,7 +86,6 @@ class Pengguna extends CI_Controller {
 		$data = array(	'title'				=>	'Edit Pengguna',
 						'id_pengguna'		=>	'id_pengguna',
 						'pengguna'			=>	$pengguna,
-						'data_pengguna'		=>	$data_pengguna,
 						'isi'				=>	'admin/pengguna/edit'
 					);
 		$this->load->view('admin/layout/wrapper', $data, FALSE);

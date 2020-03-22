@@ -1,3 +1,7 @@
+<?php 
+// menu produk
+$menu_produk = $this->konfigurasi_model->nav_produk();
+ ?>
 </div><!-- End .header-dropown -->
                     </div><!-- End .header-right -->
                 </div><!-- End .container -->
@@ -45,10 +49,10 @@
                             <li><a href="<?php echo base_url('tentang') ?>">Tentang Kami</a></li>
                             <li><a href="<?php echo base_url('produk') ?>" class="sf-with-ul">Produk</a>
                                 <ul style="max-height: 250px; overflow: auto;">
-                                    <?php foreach ($kategori_produk as $kategori_produk) { ?>
-                                        <li><a href="<?php echo base_url('$kategori_produk->id_kategori_produk') ?>">
+                                    <?php foreach ($menu_produk as $menu_produk) { ?>
+                                        <li><a href="<?php echo base_url('produk/kategori/'.$menu_produk->slug_kategori_produk) ?>">
                                             <i class="fa fa-genderless" style="font-size:10px;"></i>
-                                            <?php echo $kategori_produk->nama_kategori_produk ?></a></li>
+                                            <?php echo $menu_produk->nama_kategori_produk ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </li>

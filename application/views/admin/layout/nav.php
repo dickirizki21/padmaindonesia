@@ -50,12 +50,6 @@
           </a>
         </li>
 
-        <li>
-          <a href="<?php echo base_url('backend/toko_kami') ?>">
-            <i class="fa fa-envelope"></i> <span>Pesan</span>
-          </a>
-        </li>
-
         <?php if ($this->session->userdata('akses_level') == "SuperAdmin") { ?>
         <li>
           <a href="<?php echo base_url('backend/pengguna') ?>">

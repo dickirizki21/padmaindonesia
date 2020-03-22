@@ -31,6 +31,53 @@ class Konfigurasi_model extends CI_Model {
 		$this->db->update('tbl_konfigurasi', $data);
 	}
 
+	// listing nav produk
+	public function nav_produk()
+	{
+		$this->db->select('tbl_produk.*, tbl_kategori_produk.nama_kategori_produk, tbl_kategori_produk.slug_kategori_produk, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_produk');
+		// join
+		$this->db->join('tbl_kategori_produk', 'tbl_kategori_produk.id_kategori_produk = tbl_produk.id_kategori_produk', 'left');
+		$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_produk.id_pengguna', 'left');
+		// end joint
+		$this->db->group_by('tbl_produk.id_kategori_produk');
+		$this->db->order_by('id_produk', 'desc');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// listing nav produk
+	public function kategori_artikel_kanan()
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		// join
+		$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'left');
+		$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'left');
+		// end joint
+		$this->db->group_by('tbl_artikel.id_kategori_artikel');
+		$this->db->where('jenis_artikel', "Artikel");
+		$this->db->order_by('id_artikel', 'desc');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	// listing nav produk
+	public function kategori_berita_kanan()
+	{
+		$this->db->select('tbl_artikel.*, tbl_kategori_artikel.nama_kategori_artikel, tbl_kategori_artikel.slug_kategori_artikel, tbl_pengguna.nama_pengguna');
+		$this->db->from('tbl_artikel');
+		// join
+		$this->db->join('tbl_kategori_artikel', 'tbl_kategori_artikel.id_kategori_artikel = tbl_artikel.id_kategori_artikel', 'left');
+		$this->db->join('tbl_pengguna', 'tbl_pengguna.id_pengguna = tbl_artikel.id_pengguna', 'left');
+		// end joint
+		$this->db->group_by('tbl_artikel.id_kategori_artikel');
+		$this->db->where('jenis_artikel', "Berita");
+		$this->db->order_by('id_artikel', 'desc');
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 }
 
 /* End of file Konfirgurasi_model.php */

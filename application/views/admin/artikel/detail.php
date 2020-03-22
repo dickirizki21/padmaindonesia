@@ -2,7 +2,7 @@
     </button>
  
 <div class="modal modal-default fade" id="Detail<?php echo $artikel->id_artikel ?>">
-<div class="modal-dialog modal-lg">
+<div class="modal-dialog modal-md">
   <div class="modal-content">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -15,7 +15,7 @@
     <tr>
       <td>
         <td colspan="3">
-        <center><img src="<?php echo base_url().'assets/images/artikel/'.$artikel->gambar ?>" class="img img-thumbnail" width="300">
+        <center><img src="<?php echo base_url().'assets/images/artikel/'.$artikel->gambar ?>" class="img img-thumbnail" width="700px">
         <?php  ?></center></td>
       </td>
     </tr>

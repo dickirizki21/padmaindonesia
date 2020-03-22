@@ -79,7 +79,6 @@ class Toko_kami extends CI_Controller {
 		// print_r($id_toko); die;
 		$toko_kami 		= 	$this->toko_kami_model->listing($id_toko);
 		// print_r($toko_kami); die;
-		$data_toko_kami =	count($toko_kami);
 		$pengguna 		= 	$this->pengguna_model->listing();
 		$data_pengguna	= 	count($pengguna);
 
@@ -95,7 +94,6 @@ class Toko_kami extends CI_Controller {
 		$data = array(	'title'				=>	'Edit Outlet',
 						'id_toko'			=>	'id_toko',
 						'toko_kami'			=>	$toko_kami,
-						'data_toko_kami'	=>	$data_toko_kami,
 						'data_pengguna'		=> 	$data_pengguna,
 						'isi'				=>	'admin/toko_kami/edit'
 					);
